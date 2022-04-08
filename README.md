@@ -1,2 +1,1 @@
-# docsz
-作为自己个人博客的初次搭建
+# Hello VuePress
