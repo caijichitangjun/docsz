@@ -1,5 +1,5 @@
 ---
-title: vue基础-格式
+title: vue文件格式
 description: 'vue文件的格式是怎样的？'
 date: ''
 sidebar: 'left'
