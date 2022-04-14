@@ -3,12 +3,12 @@ module.exports = {
   description: '一枚小菜鸡的学习日记',
   head: [
     [
-      'link', { rel: 'icon', href: '/assets/img/logo.jpg' }
+      'link', { rel: 'icon', href: '/assets/img/logo.ico' }
     ]
   ],
   theme: 'reco',
   themeConfig: {
-    logo: '/assets/img/logo.jpg',
+    logo: '/assets/img/mydaughter.jpg',
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '个人信息', link: '/personalInformation/my' },

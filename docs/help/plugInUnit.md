@@ -7,6 +7,7 @@ categories:
  - vscode
 tags: 
  - vscode
+ - help
 publish: true
 ---
 
