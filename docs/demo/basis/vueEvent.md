@@ -35,7 +35,7 @@ publish: true
 
 ### 事件使用
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在html和js中如果需要调用某个函数，trySomething和trySomething()在没有参数的情况下是一样的，有参数的话自然选择后一种。  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当函数有返回值且想要将返回值显示在页面上，则可以`<div style="color:green">｛｛trySomething()｝｝</div>`，显示效果为<span style="color:green">你好</span>。<span style="color:red">注意：这里必须携带(),否则会将整个函数作为插入的内容展示</span> 。**[我是实在没想到，写在md代码区内也会被解析，所以这里用了中文花括号，还请见谅]**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当函数有返回值且想要将返回值显示在页面上，则可以`<div style="color:green">｛｛trySomething()｝｝</div>`，显示效果为<span style="color:green">你好</span>。<span style="color:red">注意：这里必须携带(),否则会将整个函数作为插入的内容展示</span> 。**[ 我是实在没想到，写在md代码区内也会被解析，所以这里用了中文花括号，还请见谅 ]**
 
 ### 事件修饰符
 

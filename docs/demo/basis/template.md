@@ -21,7 +21,7 @@ publish: true
 ```
 <template>
   <div>
-    {{ Welcome }}
+    {{ Welcome }}  // 这个就是插值语法，{{}}
   </div>
 </template>
 
@@ -49,7 +49,13 @@ export default {
 ><style\/>标签的内部书写的是css、less、sass等代码，负责的是html内容的样式。
 
 ### 插值语法
-
+```
+<template>
+  <div>
+    {{ Welcome }}  // 这个就是插值语法，{{}}
+  </div>
+</template>
+```
 1. 在插值表达式中，只能设置简单的javascript表达式，不能设置复杂的表达式(例如for循环)。  
 2. 在data值大小不改变的前提下，可以进行一般的 算术运算、比较运算、逻辑运算、三元操作符等运算使用，也可以通过常量进行数据体现。
 3. 插值表达式只能用在html标签的内容区域，不能用在其他地方。

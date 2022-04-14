@@ -1,30 +1,43 @@
 <template>
-    <div>
-        <el-button @click="trySomething"></el-button>
-    </div>
+  <div>
+    <div v-text="firstName"></div>
+    <h2>把n放大10倍:<span v-big="n"></span></h2>
+  </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            firstName:'',
-            lastName:'',
-        }
+  data() {
+    return {
+      firstName: "",
+      lastName: "",
+    };
+  },
+  computed: {},
+  created() {},
+  mounted() {},
+  methods: {
+    trySomething() {
+      item = document.getElementById;
     },
-    computed:{
-        
+  },
+  beforeUnmount() {
+      
+  },
+  unmounted() {
+      
+  },
+  directives: {
+    big(element, binding) {
+      element.innerText = binding.value * 10;
     },
-    created() {},
-    mounted() {},
-    methods: {
-        trySomething(){
-
-        }
-    },
-}
+  },
+};
 </script>
 
 <style scoped >
-
+/* scoped是用于控制组件时的命名冲突问题 */
+[v-cloak] {
+  display: none;
+}
 </style>
