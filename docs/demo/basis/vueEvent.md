@@ -1,5 +1,5 @@
 ---
-title: vue基础-事件绑定
+title: vue基础-事件监听
 description: '在进行项目讲解前的vue基础讲解'
 date: ''
 sidebar: 'auto'
@@ -15,7 +15,7 @@ publish: true
 
 ## 事件处理
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;前文我们介绍了在vue中的数据绑定，也简单介绍了数据绑定的原理。这本文中我们要介绍的是vue的事件绑定即事件处理。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;前文我们介绍了在vue中的数据绑定，也简单介绍了数据绑定的原理。这本文中我们要介绍的是vue的事件监听。
 ```
 基本写法：
     <template>
@@ -74,11 +74,5 @@ publish: true
 > 特殊的键盘按键
 > 1. 配合keyup使用时，需要按下修饰键的同时，再按下其他键，随后释放其他键，这时定义事件才会正常触发
 > 2. 配合keydown使用时，正常触发。
-
-
-
-
-
-
 
 

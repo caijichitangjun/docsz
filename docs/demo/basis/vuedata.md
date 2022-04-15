@@ -1,5 +1,5 @@
 ---
-title: vue基础-数据绑定与使用
+title: vue基础-数据绑定
 description: '在进行项目讲解前的vue基础讲解'
 date: ''
 sidebar: 'auto'

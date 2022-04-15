@@ -8,7 +8,7 @@ categories:
 tags: 
  - vue
 prev: ./otherInstructions
-next: ./lifeCycle
+next: ../assembly/assembly
 publish: true
 ---
 
