@@ -1,6 +1,6 @@
 ---
 title: vue组件化
-description: '在进行项目讲解前的vue基础讲解'
+description: 'vue-cli搭建的项目的相关内容简介'
 date: ''
 sidebar: 'auto'
 categories: 
@@ -9,7 +9,7 @@ tags:
  - vue
  - assembly
 prev: ../basis/lifeCycle
-next: false
+next: ./configAndProper
 publish: true
 ---
 
@@ -78,4 +78,13 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从名字上我们大致知道Vuecomponents是vue的组件对象，它是不需要程序员自己调用的。具体到vue项目中且以上文的IndependentQuery组件为例，当我们使用已经声明的组件\<IndependentQuery/>时，vue会自动帮我们new一个IndependentQuery的实例对象，即执行new Vuecomponents(options)，<span style="color:red">我们每次调用自定义组件时，vue都会给我们一个新的组件实例对象。</span>    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在vue中this是一个使用非常频繁的单词，它往往是一个指代关系，指代对象是vm（View Model），在前面我们提到过[MVVM模型](../basis/template.md)，即我们在js中的所有代码都可以通过this读取到自身.vue文件的所有数据和方法。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为我们每次使用组件时，Vuecomponents都会给我们一个新的实例对象，所以他们的this指向它们各自的vm（因为他们都是Vuecomponents创建出来的，这里也可称为vc），正是因为他们的this指向不同，会产生组件间的通信问题，这个后面会讲，这里知道这个问题就行。  
+> 关于this指向:
+> 1. 组件配置中:  
+data函数、methods中的函数、watch中的函数、computed中的函数它们的this均是【VueComponent实例对象/vc】  
+> 2. new Vue(options)配置中:  
+data函数、methods中的函数、watch中的函数、computed中的函数它们的this均是【Vue实例对象/vm】。  
+
+![vc与vm的关系](../imgs/assembly/vcAvm.png)  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在图中我们可以看到，vc的隐式原型对象指向了vm的原型对象（`VueComponent.prototype.__proto__ === Vue.prototype`），这就导致vm和vc的功能基本一致，所以我们编写的.vue文件才会是相同的样式，也因为这条指向关系的存在，后期我们介绍组件间通信的时候也可以用到。  
 

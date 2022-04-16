@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h2>{{ shwoInfo }}</h2>
-    <span style="color:red"></span>
+    <el-button @click="triggerCustomEvent"></el-button>
   </div>
 </template>
 
@@ -10,9 +9,14 @@ export default {
   name: "BreadCrumb",
   data() {
     return {
-      shwoInfo: "我是一个组件", 
+      name:'组件内',
     }
   },
+  methods:{
+    triggerCustomEvent(){
+      this.$emit('testCustomEvent',name)
+    }
+  }
 };
 </script>
 
