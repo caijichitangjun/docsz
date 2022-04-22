@@ -9,7 +9,7 @@ tags:
  - vue
  - assembly
 prev: ./storaged
-next: false
+next: ./animation
 publish: true
 ---
 
@@ -108,5 +108,28 @@ main.js中
   }
 ```
 > 4. 提供数据与订阅消息: pubsub.publish('pubsubInfo", name)  
-> 5. 最好在beforeDestroy钩子中，用PubSub.unsubscribe(pid)去取消订阅。
+> 5. 最好在beforeDestroy钩子中，用PubSub.unsubscribe(pid)去取消订阅。  
+
+### $nextTick
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在我们希望隐藏的输入框显示时可以获取焦点时，因为Vue解析模版会在当前js区所以代码执行完毕后，再更新html模版，我们无法为尚未显示的内容获取焦点，因此需要获取焦点的代码延迟生效。
+```
+1. settimeout
+  <input type="text" v-show="isShow" :value="value">
+  triggerCustomEvent(){    // 触发显示和隐藏的按钮事件
+    this.isShow = true
+    setTimeout(()=>{
+      this.$refs.inputWord.focus()
+    },200)
+  }
+2. nextTick
+<input type="text" v-show="isShow" :value="value">
+  triggerCustomEvent(){    // 触发显示和隐藏的按钮事件
+    this.isShow = true
+    this.$nextTick(function(){
+      this.$refs.inputWord.focus()
+    })
+  }
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nextTick的作用是在下一次DOM更新结束后执行指定的回调，延迟生效。一般适用于，更改某些数据，要基于改变之后的DOM进行某项操作。
+
 
