@@ -41,7 +41,7 @@ publish: true
 
 ### 两个新的生命周期钩子及vue3的变化
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为什么要引入这两个生命周期钩子？  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在我们引入route路由时，页面通过路由跳转时，beforeDestroy会有点小问题。因为我们仅仅是跳转了界面，更换了显示内容，原内容仍然被保存着并没有被销毁，所以原先写在beforeDestroy的内容并没有被执行，所以就要用到新的生命周期钩子
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在我们引入[route路由](../assembly/tryRouter.md)时，页面通过路由跳转时，beforeDestroy有时会有点小问题。因为当设置了缓存路由组件时，跳转界面，更换显示内容，原内容仍然被保存着并没有被销毁，所以原先写在beforeDestroy的内容并不会被执行，因此需要用到新的生命周期钩子。
 > 1. activated:路由组件激活时  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过路由跳转进入该路由界面时，此时原本写在mounted的打开定时器等操作就可以写在activated中实现。  
 > 2. deactivated:路由组件失活时  
