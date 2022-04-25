@@ -50,3 +50,13 @@ publish: true
 > 4. destroyed:销毁后  ===> unmounted:卸载后
 
 ![生命周期演示图vue3](../imgs/basis/lifecycle3.svg)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为在vue3中引入了组合式Api的概念，因此生命周期钩子也可以写在setup函数内部。不过需要更名：
++ beforeCreate    ====>   setup()
++ created         ====>   setup()
++ beforeMount     ====>   onBeforeMount()
++ mounted         ====>   onMounted()
++ beforeUpdate    ====>   onBeforeUpdate()
++ updated         ====>   onUpdated()
++ beforeUnmount   ====>   onBeforeUnmount()
++ unmounted       ====>   onUnmounted()

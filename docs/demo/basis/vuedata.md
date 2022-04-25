@@ -8,7 +8,7 @@ categories:
 tags: 
  - vue
  - binding
-prev: ./template
+prev: ./hooks
 next: ./vueEvent
 publish: true
 ---
@@ -17,7 +17,7 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**什么是数据绑定？**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在原先我们书写html页面时，有时需要动态的更改某些数据的值、某些选择框的状态等，这时就需要我们使用document.getElementById()等获取到元素，然后再进行修改即可。  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在vue中，其为我们提供了三种数据绑定的方式。让我们更改数据以及数据实时展示更加方便。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在vue中，其为我们提供了三种数据绑定的方式。让我们更改数据以及数据实时展示更加方便。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.单向绑定：v-bind  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.双向绑定：v-model  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.自定义绑定  

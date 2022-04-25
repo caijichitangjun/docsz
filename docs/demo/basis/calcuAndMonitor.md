@@ -79,3 +79,99 @@ data() {
     }
   }
 ```
+
+### vue3中的computed和watch
+
+#### computed
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为组合式Api，自然内部的内容多为函数。
+```
+<script>   
+  import { computed } from 'vue'
+  export default {
+    setup(){
+      let Fname = '张',
+      let Lname = '三',
+      // 缩略写法  
+      let fullName = computed(()=>{
+        return Fname.value + '-' + Lname.value;
+      }),
+      // 完整写法    
+      let fullName = computed({ 
+        get(){
+          return Fname.value + '-' + Lname.value;
+        },
+        set(value){
+          const name = value.split('-');
+          Fname.value = name[0];
+          Lname.value = name[1];
+        }
+      }),
+    }
+  };
+</script>
+```
+
+#### watch
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为组合式Api，自然内部的内容多为函数。
+```
+<script>   
+  import { watch, ref, reactive } from 'vue'
+  export default {
+    setup(){
+      let sum = ref(18),
+      let age = ref(19),
+      let stu = reactive({
+        name:'123',
+        age:12,
+      })
+      // 监视一个
+      watch(sum,(newValue,oldValue)=>{
+        consolo.log('sum变化了');
+      },{immediate:true}),
+
+      // 监视多个
+      watch([sum, age],(newValue,oldValue)=>{
+        consolo.log('sum/age变化了');
+      },{immediate:true}),
+
+      // 监视对象
+      watch(stu,(newValue,oldValue)=>{
+        consolo.log('stu变化了');
+      },{immediate:true}),
+
+      // 监视对象内某个属性
+      watch(()=>person.job,(newValue,oldValue)=>{
+        consolo.log('stu变化了');
+      },{immediate:true, deep:true}),
+    }
+  };
+</script>
+```
++ 监视多个时，newValue和oldValue为多个数据组成的数组
++ 监视数组时，无法获取到oldValue，此时的oldValue和newValue一致，默认开启深度监视。
++ 监视数组内部属性时，需要开启深度监视`deep:true`
+
+### watchEffect函数
+```
+<script>   
+  import { watchEffect, ref } from 'vue'
+  export default {
+    setup(){
+      let sum = ref(18),
+      watchEffect(()=>{
+        sum.value++;
+        consolo.log('watchEffect监视的是该函数内部使用到的变量')
+      })
+    }
+  };
+</script>
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.与watch的对比  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watch：既要指明监视的属性，也要指明监视的回调  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watchEffect：不用指明监视哪个属性，监视的回调中用到哪个属性，那就监视哪个属性。  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.与computed的对比  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;computed注重计算出来的值（回调函数的返回值）,所以必须要写返回值。  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;watchEffect更注重的是过程（回调函数的函数体）,所以不用写返回值。  
+
+
+
