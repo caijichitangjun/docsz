@@ -1,6 +1,9 @@
 <template>
   <div>
     <h3>{{ text }}</h3>
+    
+    <label for="man"></label>
+    <input type="text" name="" id="man">
     <TrySlot>
       <h4 slot="NameSlot">这里的内容会作为插槽的填充内容显示在子组件范围内</h4>
     </TrySlot>
@@ -9,7 +12,6 @@
 </template>
 
 <script>
-import trySlot from "./trySlot";
 export default {
   name: "tryAll",
   components: { },

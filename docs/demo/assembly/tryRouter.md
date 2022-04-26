@@ -7,6 +7,7 @@ categories:
  - vue
 tags: 
  - vue
+ - route
 prev: ./vuexDemo
 next: false
 publish: true

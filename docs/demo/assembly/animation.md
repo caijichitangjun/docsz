@@ -7,6 +7,7 @@ categories:
  - vue
 tags: 
  - vue
+ - animation
 prev: ./Ccommunication
 next: ./agent
 publish: true

@@ -7,6 +7,7 @@ categories:
  - vue
 tags: 
  - vue
+ - Vuex
 prev: ./slot
 next: ./tryRouter
 publish: true
