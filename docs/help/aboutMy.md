@@ -10,9 +10,10 @@ tags:
 prev: false
 next: false
 publish: true
+sticky: 1
 ---
 
-::: tip
+:::tip
 这里是我的个人介绍啦！🍎 🍏 🍊 🍋 🍒 🍇 🍉 🍓 🍑
 :::
 

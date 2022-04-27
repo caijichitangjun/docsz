@@ -4,9 +4,10 @@ description: '在进行项目讲解前的vue基础讲解'
 date: ''
 sidebar: 'auto'
 categories: 
- - vue
+ - html
 tags: 
- - vue
+ - html
+ - js
 prev: ./template
 next: ./vuedata
 publish: true

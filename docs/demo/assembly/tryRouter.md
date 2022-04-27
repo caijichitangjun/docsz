@@ -226,4 +226,7 @@ routes: [
 | /login组件 | beforeRouteEnter触发| /user组件 | beforeRouteLeave触发 | /find组件 |
 
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恭喜你，vue的内容基本都已经学完了，这时候你应该去找一个vue的项目实战来巩固所学，在这里我给大家推荐一个：
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [尚硅谷Vue项目硅谷外卖](https://www.bilibili.com/video/BV1Lp411d7w4)。
+
 

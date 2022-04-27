@@ -52,7 +52,53 @@ plugins: [
 ]
 ```
 ## yarn add vuepress-plugin-copyright -D
+```
+'vuepress-plugin-code-copy': true,           // 代码复制功能
+```
 
 ## kanbanniang
+```
+'@vuepress-reco/vuepress-plugin-kan-ban-niang': {  // 看板娘(右下角)
+      theme: ['shizuku', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'wanko', 'z16'],
+      messages: {
+        welcome: '欢迎来到浅笑的个人博客',
+        home: '心里的花，我想要带你回家。',
+        theme: '好吧，希望你能喜欢我的其他小伙伴。',
+        close: '你知道我喜欢吃什么吗？痴痴地望着你。'
+      },
+      width:200,
+      height:282,
+    },
+```
 
+## 光标点击效果
+```
+'cursor-effects': {
+  size: 2, // size of the particle, default: 2
+  shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
+  zIndex: 999999999, // z-index property of the canvas, default: 999999999
+}
+```
 
+## 音乐播放
+```
+'@vuepress-reco/vuepress-plugin-bgm-player': {  // 首页歌曲
+  audios: [
+    {
+      name: '雪月',
+      artist: '王玲琳',
+      url: '/assets/mp4/xueyue.mp3',
+      cover: '/assets/img/xueyue.jpg'
+    },
+    {
+      name: '世间美好与你环环相扣',
+      artist: '冯提莫',
+      url: '/assets/mp4/meihao.mp3',
+      cover: '/assets/img/meihao.jpg'
+    }
+  ] ,
+  autoShrink: true ,    // 是否默认缩小
+  shrinkMode: 'float',  // 缩小时缩为哪种模式
+  floatStyle:{ bottom: '10px', 'z-index': '999999' }      // 悬浮窗样式
+},
+```

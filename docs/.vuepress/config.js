@@ -43,6 +43,12 @@ module.exports = {
           artist: '王玲琳',
           url: '/assets/mp4/xueyue.mp3',
           cover: '/assets/img/xueyue.jpg'
+        },
+        {
+          name: '世间美好与你环环相扣',
+          artist: '冯提莫',
+          url: '/assets/mp4/meihao.mp3',
+          cover: '/assets/img/meihao.jpg'
         }
       ] ,
       autoShrink: true ,    // 是否默认缩小
@@ -57,7 +63,7 @@ module.exports = {
         theme: '好吧，希望你能喜欢我的其他小伙伴。',
         close: '你知道我喜欢吃什么吗？痴痴地望着你。'
       },
-      width:20022.,
+      width:200,
       height:282,
     },
     'cursor-effects': {
