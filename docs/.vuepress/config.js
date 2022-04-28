@@ -57,6 +57,7 @@ module.exports = {
     },
     '@vuepress-reco/vuepress-plugin-kan-ban-niang': {  // 看板娘
       theme: ['shizuku', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'wanko', 'z16'],
+      // theme:['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
       messages: {
         welcome: '欢迎来到浅笑的个人博客',
         home: '心里的花，我想要带你回家。',
@@ -69,7 +70,7 @@ module.exports = {
     'cursor-effects': {
       size: 2, // size of the particle, default: 2
       shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
-      zIndex: 999999999, // z-index property of the canvas, default: 999999999
+      zIndex: 10000, // z-index property of the canvas, default: 999999999
     }
   },
 }

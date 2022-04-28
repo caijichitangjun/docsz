@@ -126,22 +126,22 @@ data() {
       })
       // 监视一个
       watch(sum,(newValue,oldValue)=>{
-        consolo.log('sum变化了');
+        console.log('sum变化了');
       },{immediate:true}),
 
       // 监视多个
       watch([sum, age],(newValue,oldValue)=>{
-        consolo.log('sum/age变化了');
+        console.log('sum/age变化了');
       },{immediate:true}),
 
       // 监视对象
       watch(stu,(newValue,oldValue)=>{
-        consolo.log('stu变化了');
+        console.log('stu变化了');
       },{immediate:true}),
 
       // 监视对象内某个属性
       watch(()=>person.job,(newValue,oldValue)=>{
-        consolo.log('stu变化了');
+        console.log('stu变化了');
       },{immediate:true, deep:true}),
     }
   };
@@ -160,7 +160,7 @@ data() {
       let sum = ref(18),
       watchEffect(()=>{
         sum.value++;
-        consolo.log('watchEffect监视的是该函数内部使用到的变量')
+        console.log('watchEffect监视的是该函数内部使用到的变量')
       })
     }
   };

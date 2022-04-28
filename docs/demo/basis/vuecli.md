@@ -47,7 +47,7 @@ publish: true
 >>App.vue &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//我们所写的\/.vue文件的父组件.
 >>main.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//下载插件的定义和声明的位置
 
->babel.config.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// babel的控制文件，即涉及SE语法转换问题，
+>babel.config.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// babel的控制文件，即涉及ES语法转换问题，
 
 >jsconfig.json &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//javascript服务选项，详细请参考[vscode jsconfig.json 使用说明](https://blog.csdn.net/zengzeng011/article/details/103889282)
 

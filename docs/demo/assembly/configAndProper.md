@@ -91,7 +91,7 @@ publish: true
     },
     methods:{
       showHolle(){
-        consolo.log("我被子组件调用了")
+        console.log("我被子组件调用了")
       }
     }
   };
