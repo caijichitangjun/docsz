@@ -19,7 +19,7 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以通俗的语言来理解是，在组件内部预留出一个位置，在调用组件的地方以不同的功能填充，如果没有需要填充的内容，则显示默认的内容。
 
 ### 默认插槽
-```
+```vue
 子组件：
   <template>
     <div>
@@ -59,7 +59,7 @@ publish: true
 
 ### 具名插槽
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当我们有多个需要插入的功能时，就需要为插槽命名，指定功能插入的位置。
-```
+```vue
 子组件：
   <slot name="NameSlot">这是具名插槽，如果没有填充，会显示这行文字</slot>
 
@@ -69,7 +69,7 @@ publish: true
   </TrySlot>
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当有一大段的功能代码需要放在插槽某一位置上时，如果不想多次写`slot="NameSlot"`，可以使用`template`标签来对放在同一位置的插槽内容进行包裹，此时`slot="NameSlot"`有第二种写法`v-slot:NameSlot`，此种写法仅适用于`template`标签。
-```
+```vue
 父组件：
   <TrySlot>
     <template v-slot:NameSlot>
@@ -83,7 +83,7 @@ publish: true
 
 ### 作用域插槽
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一般作用于数据在子组件内部，但外部的父组件插槽插入内容时需要使用子组件的数据值。
-```
+```vue
 子组件：
   <slot :slotData="slotData">这是具名插槽，如果没有填充，会显示这行文字</slot>
 

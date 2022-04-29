@@ -25,7 +25,7 @@ publish: true
 
 3. 自动提示属性autocomplete 
   autocomplete既可以加在form表单整体上，也可以加在单个表单元素上。
-```
+```html
   <form action="" autocomplete="on">
     <input type="text" name="" id="">
     <input type="text" name="" id="" autocomplete="off">
@@ -33,7 +33,7 @@ publish: true
 ```
 4. 提示选择 list和datalist  
   list和datalist为选择框内容，内部为value和label的对象组合
-```
+```javaScript
 list:[
   {
     value:'beijing',  // 用于存储数据
@@ -58,7 +58,7 @@ list:[
   `<input type="submit" formnovalidate="formnovalidate" value="Submit" />`
 
 9. label中for属性：使得label与后文input绑定，点击label相当于点击input
-```
+```html
   <label for="man"></label>
   <input type="text" name="" id="man">
 ```

@@ -16,19 +16,22 @@ publish: true
 ## 事件处理
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;前文我们介绍了在vue中的数据绑定，也简单介绍了数据绑定的原理。这本文中我们要介绍的是vue的事件监听。
+```html
+<!-- 基本写法： -->
+  <template>
+    <div>
+      <el-button v-on:click="trySomething">点击</el-button>  //v-on:click --> @click
+    </div>
+  </template>
 ```
-基本写法：
-    <template>
-      <div>
-        <el-button v-on:click="trySomething">点击</el-button>  //v-on:click --> @click
-      </div>
-    </template>
-    js-->methods: {
-      trySomething(){
-        console.log("我触发了一个点击事件")
-        return "你好"
-      }
-    },
+```js
+  // js-->methods
+  methods: {
+    trySomething(){
+      console.log("我触发了一个点击事件")
+      return "你好"
+    }
+  },
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里我们展示是点击事件的写法，以及简写形式。在项目开发中仅仅只有点击事件我们无法完成很多复杂的任务，例如说hover触发、更改value值触发等，因此我们需要使用与功能匹配的时间修饰符。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当然如果你使用了类似于[element-ui](https://element.eleme.cn/#/zh-CN/component/installation)的组件库，每一个组件它都会为你提供很多的方法供你使用。

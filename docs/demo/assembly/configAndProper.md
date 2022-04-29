@@ -19,7 +19,7 @@ publish: true
 
 ### ref属性
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通常用于父组件获取子组件的数据和方法。
-```
+```vue
   <template>
     <div>
       <h2 ref="title">{{ shwoInfo }}</h2>
@@ -50,7 +50,7 @@ publish: true
 
 ### props
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;props通常用于父组件向子组件传值和方法。
-```
+```vue
   <template>     <!-- 创建一个组件，写法和正常的vue文件书写方式一致 -->
     <div>
       <h2>{{ shwoInfo }}</h2>
@@ -71,7 +71,7 @@ publish: true
   };
   </script>
 ```
-```
+```vue
   <template>
     <div>
       <h2>{{ shwoInfo }}</h2>
@@ -102,7 +102,7 @@ publish: true
 通过我们的演示代码，我们发现我们可以发现，props传递的对象可以是静态数据、data定义数据、methods方法。当传递的为静态数据时，传递的都为字符串，如果需要传递数字需要使用绑定的形式`:age="18"`
 > 2. 传输限制：  
 在props传递数据中，我们可能接收到与我们预期不同的类型或缺少相应数据，这时为了避免使用时出现问题，我们需要对接收的数据做出限制
-```
+```js
 常见写法：props:['age','shwoInfo','showHolle'],
 简单限制：props:{         //仅对传入类型限制
             age:Number,
@@ -127,7 +127,7 @@ publish: true
 
 ### mixin
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mixin意为混合，意思是将组件中的相同数据和方法抽离出去形成一个单独的文件，然后在需要使用这些方法或数据的地方将混合引入即可，如下。
-```
+```vue
 .vue文件中，引入混合
   <template>
     <div>
@@ -147,8 +147,9 @@ publish: true
     mixins:[mixin]   
   };
   </script>
-
-mixin.js中（命名是随意的，引入的时候别写岔了就行，一个js文件中也可以写多个混合。）
+```
+```js
+// mixin.js中（命名是随意的，引入的时候别写岔了就行，一个js文件中也可以写多个混合。）
   export default mixin = {
     data() {
       return {
@@ -171,7 +172,7 @@ mixin.js中（命名是随意的，引入的时候别写岔了就行，一个js�
 
 ### 插件
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;插件的作用可以对vue进行增强&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[你被强化了，快上！]  
-```
+```js
 export default {
   install(Vue){   // 大家注意，这里可以接受到的参数是vm的缔造者Vue,因此我们能在vm上做到的事情在这都可以办到
     // 定义一个过滤器
@@ -212,8 +213,8 @@ export default {
   }
 }
 ```
-```
-main.js中把插件激活(我个人喜欢把.vue文件集中放在src/view文件夹内，大家不用纠结，纯属个人习惯)
+```js
+// main.js中把插件激活(我个人喜欢把.vue文件集中放在src/view文件夹内，大家不用纠结，纯属个人习惯)
   import plugin from './view/plugins.js'  
   Vue.use(plugin)
 ```

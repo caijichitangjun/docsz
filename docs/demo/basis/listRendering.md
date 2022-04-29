@@ -20,7 +20,7 @@ publish: true
 > 3. <span style="color:red">浏览器在进行重绘和重排的时候是要付出高昂的性能代价的。因此在前端代码编写中减少重排和重绘也是对编译人员技术的考察</span>  
 
 ### 条件渲染
-```
+```vue
   <h2 v-show="1 == 1 / true">你好</h2>
   <h2 v-if="1 == 1 / true">你好</h2>
 ```
@@ -32,14 +32,16 @@ publish: true
 > 5. 当有很多html内容需要同一个条件动态显示和影藏时，就需要有一个结构将这些内容都包裹起来，这时div标签就可以实现，但是这样就会破坏原有的dom结构，因此这种情况下我们使用的是template,<span style="color:red">要注意的是template只能和v-if配合使用，</span>`<template v-if="true"></template>`。  
 
 ### 列表渲染
-```
-html:列表渲染
+```html
+<!-- html:列表渲染 -->
   <ul>
     <li v-for="(item,index) in person" :key="item.id">
       
     </li>
   </ul>
-js->data->return:
+```
+```js
+// js->data->return:
   {
     person:[
       {id:0,name:'001',age:'18'}

@@ -12,7 +12,7 @@ next: false
 publish: true
 ---
 
-```
+```vue
 <template>
   <div class="typer">
     <div class="typer-content">

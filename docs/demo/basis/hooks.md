@@ -13,8 +13,8 @@ publish: true
 ---
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hooks是在vue3中新增的，本质上是一个函数，相当于vue2中[通信中的mixin](../assembly/configAndProper.md)。即将一个功能的所有相关内容汇集在一起，实现js的复用。
-```
-src同级目录 => 创建hooks文件夹 => usetest.js
+```js
+// src同级目录 => 创建hooks文件夹 => usetest.js
   import ref from 'vue'
   export default function(){
     let name = ref('jeck');
@@ -25,8 +25,9 @@ src同级目录 => 创建hooks文件夹 => usetest.js
 
     return name;
   }
-
-需要使用hooks的地方；
+```
+```vue
+// 需要使用hooks的地方；
   <script>   
     import { ref } from 'vue'
     import useName from '../hooks/usetest'

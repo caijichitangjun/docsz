@@ -16,13 +16,17 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在数据绑定中，我们知道data中定义的数据都可以视为属性，我们这里所要了解的就是属性间的计算，包括拼接、整形等，也可以对属性进行监视，在介绍数据绑定时的响应式帮助我们完成对数据的更改、存储与展示，而这里提到的监视属性则是在属性更改时触发，类似于set方法。
 
 ### computed计算属性
-```
-data() {
-  return {
-      firstName:'',
-      lastName:'',
-  }
-},
+```vue
+<script>
+  export default {
+    data() {
+      return {
+        firstName:'',
+        lastName:'',
+      }
+    },
+  };
+</script>
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请思考以下场景，我们每个人都有姓和名（firstName和lastName），假设在某一个场景下，需要显示一个人的全名，那么我们有几种方法呢？
 > 1. 插值语法: <span v-pre>{{ firstName }}-{{ lastName }} </span>  
@@ -53,48 +57,55 @@ data() {
 > }  
 
 ### watch监视属性
-```
-data() {
-  return {
-    isman:true;
-  }
-},
+```vue
+<script>
+  export default {
+    data() {
+      return {
+        isman:true;
+      }
+    },
+  };
+</script>
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计算属性一般使用在处理数据场景，而监视属性则用于监测数据是否更改，在vue中，watch监视属性不仅可以监视data中的属性还可以监视computed计算属性。
-```
-监视属性watch:
-  watch:{
-    isman:{
-      deep:true;   //开启深度监视，多作用于监测对象内部属性，其实vue是可以监视对象的属性值变化，无论它有多少层，但watch不行，只能使用深度监测的方式
-      immediate: true;  // 使监视器在初始化时被定义一次
-      hanler(newvalue,oldvalue){   //获得两个值，修改后和修改前的数据
-        //处理数据、调用函数等
+```vue
+<script>
+  export default {
+    watch:{       // 监视属性watch:
+      isman:{
+        deep:true;   //开启深度监视，多作用于监测对象内部属性，其实vue是可以监视对象的属性值变化，无论它有多少层，但watch不行，只能使用深度监测的方式
+        immediate: true;  // 使监视器在初始化时被定义一次
+        hanler(newvalue,oldvalue){   //获得两个值，修改后和修改前的数据
+          //处理数据、调用函数等
+        }
       }
-    }
-  }
-简写watch: (此时不能配置deep和immediate)
-  watch:{
-    isman(newvalue,oldvalue){   //获得两个值，修改后和修改前的数据
-      //处理数据、调用函数等
-    }
-  }
+    },
+    // watch:{   // 简写watch: (此时不能配置deep和immediate)
+    //   isman(newvalue,oldvalue){   //获得两个值，修改后和修改前的数据
+    //     //处理数据、调用函数等
+    //   }
+    // } 
+  };
+</script>
+  
 ```
 
 ### vue3中的computed和watch
 
 #### computed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为组合式Api，自然内部的内容多为函数。
-```
+```vue
 <script>   
   import { computed } from 'vue'
   export default {
     setup(){
-      let Fname = '张',
-      let Lname = '三',
+      let Fname = '张';
+      let Lname = '三';
       // 缩略写法  
       let fullName = computed(()=>{
         return Fname.value + '-' + Lname.value;
-      }),
+      });
       // 完整写法    
       let fullName = computed({ 
         get(){
@@ -113,7 +124,7 @@ data() {
 
 #### watch
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为组合式Api，自然内部的内容多为函数。
-```
+```vue
 <script>   
   import { watch, ref, reactive } from 'vue'
   export default {
@@ -152,7 +163,7 @@ data() {
 + 监视数组内部属性时，需要开启深度监视`deep:true`
 
 ### watchEffect函数
-```
+```vue
 <script>   
   import { watchEffect, ref } from 'vue'
   export default {

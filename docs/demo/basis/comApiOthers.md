@@ -17,7 +17,7 @@ publish: true
 ### shallowReactive 与 shallowRef
 
 #### shallowReactive
-```
+```js
   let test = shallowReactive({
     name:'123',
     left:{
@@ -33,7 +33,7 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;应用场景：数据嵌套比较深，但只有最浅层需要更改。  
 
 #### shallowRef
-```
+```js
 let test = shallowRef({
   name:'123'
 })
@@ -45,7 +45,7 @@ let test = shallowRef({
 ### readonly 与 shallowReadonly
 
 #### readonly
-```
+```js
   let test = reactive({
     name:'123',
     left:{
@@ -60,7 +60,7 @@ let test = shallowRef({
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;应用场景：没啥用，个人感觉。  
 
 #### shallowReadonly
-```
+```js
   let test = reactive({
     name:'123',
     left:{
@@ -77,7 +77,7 @@ let test = shallowRef({
 ### toRaw 与 markRaw
 
 #### toRaw
-```
+```js
   let test = reactive({
     name:'123',
     left:{
@@ -92,7 +92,7 @@ let test = shallowRef({
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;应用场景：将响应式的内容转化为普通内容，希望该内容的修改不会引起页面的变化。  
 
 #### markRaw
-```
+```js
   let test = reactive({
     name:'123',
     left:{
@@ -109,7 +109,7 @@ let test = shallowRef({
 
 ### customRef
 
-```
+```js
   function myRef(value,delay){
     return customRef((track,trigger)=>{
       return{
@@ -130,7 +130,7 @@ let test = shallowRef({
 
 ### provide和inject
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;父组件与孙组件及后代传值。父组件有一个 provide 选项来提供数据，后代组件需要有一个 inject 选项来开始使用这些数据。  
-```
+```js
 父组件:
   setup(){
     let car = ref('路虎');
@@ -156,7 +156,7 @@ let test = shallowRef({
 
 #### teleport
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将元素转移到指定位置的技术，用于封装自己的组件库，类似于elementui帮我们做好的一下效果（弹窗、提示等）。
-```
+```vue
   <teleport to="html">  // to的值可以直接为html元素以及选择器
     //将要传送的内容
   </teleport>
@@ -164,12 +164,13 @@ let test = shallowRef({
 
 #### Suspense（试验阶段）
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;等待异步组件时渲染一些额外内容，让应用有更好的用户体验。  
-```
+```js
 // 异步组件引入资源，动态引入。
   import {defineAsyncComponent} from 'vue'  
   const Child = defineAsyncComponent(()=>import('./components/Child.vue'))      
-
-// html
+```
+```html
+<!-- html -->
   <Suspense> 
     <template v-slot:default> 
       <Child/> 

@@ -47,7 +47,7 @@ publish: true
 ### 自定义绑定
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果我们为对象提供新的成员变量，那么当这些对象变化时，不会被vue捕获，无论是在data中存储的数据还是在页面上呈现的数据都不会做出及时的更改。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们有两种写法为对象的一个新增属性添加响应式。
-```
+```js
     1.Vue.set(对象，属性，属性值)
     2.vm.$set(对象，属性，属性值)
 ```
@@ -62,7 +62,7 @@ publish: true
 
 #### vue2
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在vue2中我们使用的是`object.defineProperty()`来对目标数据进行数据更新。
-```
+```js
     number = 19
     Object.defineProperty("需要添加绑定的对象","需要添加绑定的对象属性age",{
       value:"属性值18" //这是一种简单的写法，完整的写法是下面的get和set方法
@@ -82,8 +82,8 @@ publish: true
 
 #### vue3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在vue3上使用了一种新的方式，proxy代理和reflect反射。
-```
-  proxy代理和reflect反射
+```js
+  // proxy代理和reflect反射
     const p = new Proxy("对象",{         //花括号的内容可以为空，但不能不写。
     //target为数据对象，propName为对象属性，value为修改的值。
       get(target,propName){             //查找时触发

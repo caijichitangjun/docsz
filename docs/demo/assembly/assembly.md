@@ -27,10 +27,11 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们先了解两个概念，非单文件组件和单文件组件。在我们的项目编写中使用的是单文件组件，因为工作中的项目几乎不可能独立完成，因此你写的组件完全有可能被他人使用，为了促进伙伴间的关系，还请书写单文件组件。
 > 1. 非单文件组件：一个文件中有n个组件
 > 2. 单文件组件：一个文件仅中有1个组件
-```
+```vue
+  <template>     
+  <!-- 创建一个组件，写法和正常的vue文件书写方式一致 -->
   <!-- 因为大家看这些教程，基本都奔着项目开发去的，因此在这里我就直接展示在项目中的写法-->
   <!-- 至于在html中使用的代码，如有需要，联系博主添加 -->
-  <template>     <!-- 创建一个组件，写法和正常的vue文件书写方式一致 -->
     <div>
       <h2>{{ shwoInfo }}</h2>
     </div>
@@ -47,12 +48,12 @@ publish: true
   };
   </script>
 ```
-```
+```vue
   <template>
     <div>
       <h2>{{ shwoInfo }}</h2>
-      <IndependentQuery/>    // 使用声明的组件
-      // <IndependentQuery> </IndependentQuery/> 或者这种也可
+      <IndependentQuery/>    <!--  使用声明的组件  -->
+      <!-- <IndependentQuery> </IndependentQuery/> 或者这种也可 -->
     </div>
   </template>
 

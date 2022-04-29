@@ -64,7 +64,7 @@ publish: true
 
 ### render(v2)和createApp(v3)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们好像并没有和大家介绍过，在正常的.html文件中去使用vue编写，下面我们简单介绍一下这种写法并解释我们为什么需要render和createApp函数。
-```
+```js
   <div id="root">
     <h1>Hello，{{student}}</h1>
   </div>
@@ -88,7 +88,7 @@ publish: true
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data的两种形式各有区别，在初学时，我们写对象式或者函数式没有区别，只有当我们学习到组件时，vue才会明确的要求我们使用函数式。所以为了养成习惯，我们以后的写法中都以函数式为准。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当然为了说明render和createApp的作用，我们还得使用这种形式去定义一个组件，如下。  
-```
+```js
   <div id="root">
     <school></school>     // 使用组件
     <school></school>     // 使用组件

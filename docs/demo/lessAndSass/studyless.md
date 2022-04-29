@@ -31,7 +31,7 @@ publish: true
 
 ### 项目准备
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;需要准备两个文件夹分别保存处理前的`.less`文件和处理后的`.css`文件。
-```
+```less
 less/     // 该目录存储scss文件
 css/      // 该目录存储css文件
 ```
@@ -49,7 +49,7 @@ css/      // 该目录存储css文件
 ### less嵌套语法
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在css文件中，对于一个嵌套层级较深的层级来说，要拿到内层的元素需要一层一层的取，当内层元素较多时，定位标签时，往往编写了大量的重复代码，费时费力且不易维护。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在less中，编写代码可以嵌套这些，就像是在html的层级一样，方便后期维护。  
-```
+```html
 html:
   <div class="name">
     <div>
@@ -73,7 +73,7 @@ html:
 ### 属性复用
 #### 混合
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类似于sass中的混合mixin，不过定义的方法不同，而且其相当于一个`类选择器`。当混合被调用时，混合会将自身的属性全部放入引用的位置。
-```
+```less
 // 定义
 .mixinName(vlaue1,value2,...){
   // 在下图中，我们会给一个示例供大家理解。
@@ -92,7 +92,7 @@ html:
 
 ### 注释
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;less为我们提供了两种种注释的写法，如下：  
-```
+```less
 1. 双斜线的单行注释：
   // 我是单行注释
 2. 斜线加星号的多行注释

@@ -23,8 +23,8 @@ publish: true
 <span style="color:red">注意，如果是最新版vue（vue3）创建的项目，使用此命令创建下载vue-router是没有问题的，但是如果是由vue2创建的项目请使用`npm i vue-router@3`，否则可能产生错误。</span>
 
 > 2. 声明使用 :   
-```
-main.js：
+```js
+// main.js：
   import VueRouter from 'vue-router' 
   Vue.use(VueRouter)
   new Vue({
@@ -33,7 +33,7 @@ main.js：
     router,    // 这里只能写router
   })
 
-在src下创建route文件，route文件下创建index.js
+// 在src下创建route文件，route文件下创建index.js
   import VueRouter from 'vue-router'   
   const router = new VueRouter({ ...  })   
   export default router
@@ -52,7 +52,7 @@ eg: this.$router.push({path:'/issueDocument',query:{editForm :this.editForm}})  
 ### route与router
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;router是所有路由组件（所有可以通过路由使用的组件）的控制着，route则是当前所在路由的所有信息，往往我们可以从route上获取到上级传递的数据（query），且每个route的指向地址不同，即相互独立.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当我们通过路由跳转时，隐藏的路由组件默认是被销毁的。router的具体路由配置如下：
-```
+```js
 单级路由:
   import User from "./User";
   import Login from "./Login";
@@ -73,7 +73,7 @@ eg: this.$router.push({path:'/issueDocument',query:{editForm :this.editForm}})  
     ] 
   })  
 ```
-```
+```js
 多级路由:
   import User from "./User";
   import Login from "./Login";
@@ -108,7 +108,7 @@ eg: this.$router.push({path:'/issueDocument',query:{editForm :this.editForm}})  
 
 ### 路由跳转与参数携带
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上文我们介绍了借助`router-link`跳转和借助函数push、replace的跳转方式，在本文中我其实更推荐不使用`router-link`跳转的方式，因为这样使我们的html简洁一点，所有和逻辑相关的东西都利用js代码去实现反而更清晰，但我们在此处仍会介绍`router-link`跳转，了解了它的诸多注意点，孰优孰劣自见分晓。
-```
+```vue
 普遍写法：
   不携带参数：
     <router-link to="/homePage/user">User</router-link>
@@ -134,8 +134,8 @@ eg: this.$router.push({path:'/issueDocument',query:{editForm :this.editForm}})  
   }"></router-link>
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在路由跳转中传递的参数都是有谁替我们保管的呢？在前文中我们介绍父子组件传值时用到的props，我们这里的路由跳转传值和父子组件传值其实是类似的，也通过props接收数据，只不过props并非写在组件内，而是写在`store/index.js`文件下。
-```
-store/index.js文件：
+```js
+// store/index.js文件：
   {
     path: '/user/:editForm',  // :为占位符，editForm为参数名 
     name: 'user',
@@ -157,7 +157,7 @@ store/index.js文件：
 
 #### 缓存路由组件
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作用：让不展示的路由组件保持挂载，不被销毁。  
-```
+```vue
   <keep-alive include="User">    //User，组件的名称
     <router-view></router-view>
   </keep-alive>
@@ -184,7 +184,7 @@ store/index.js文件：
 #### 全局前置/后置路由守卫
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全局前置路由守卫在初始化和要发生路由跳转时被调用，由于前置路由上有next函数控制是否跳转，往往需要在全局前置路由守卫中对某些路由组件进行判断，这时需要我们为需要判断的路由组件添加一类共同的标识符，这类信息一般集中于meta中。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全局后置路由守卫在初始化和已经发生路由跳转时被调用。
-```
+```js
 前置路由：
   router.beforeEach((to,from,next)=>{   // 这里箭头函数和普通函数都可以
     // to是将要去的路由route对象
@@ -200,7 +200,7 @@ store/index.js文件：
 ```
 #### 独享路由守卫
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;独享路由守卫一般作用于某一特定的路由被切换时触发。
-```
+```js
 routes: [
   {
     path: '/user',
@@ -214,7 +214,7 @@ routes: [
 ```
 #### 组件内部路由守卫
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;组件内部路由守卫定义在组件内部，控制着该路由组件如何进入和如何进入下一个路由组件。
-```
+```js
 进入守卫：
   beforeRouteEnter (to, from, next) { ... },
 离开守卫：

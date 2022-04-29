@@ -4,9 +4,9 @@ description: '简介ES6的Symbol的内置值'
 date: ''
 sidebar: 'auto'
 categories: 
- - js
+ - JavaScript
 tags: 
- - js
+ - JavaScript
  - ES
  - symbol
 prev: ./ES6

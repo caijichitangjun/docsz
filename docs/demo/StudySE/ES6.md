@@ -4,9 +4,9 @@ description: '简介ES6的新特性'
 date: ''
 sidebar: 'auto'
 categories: 
- - js
+ - JavaScript
 tags: 
- - js
+ - JavaScript
  - ES
 prev: false
 next: ./ES6_2
@@ -21,7 +21,7 @@ publish: true
 
 #### let
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let定义的是一个局部变量，没有变量提升，不允许重复定义，受块级作用域限制，但受到作用域链限制（当子级自身没有某变量、方法时，会向父级查找，直到找到最深层）。
-```bash
+```javaScript
 eg:
   console.log(name);   // 未声明前使用也会报错
   let name = 'zs';
@@ -35,7 +35,7 @@ eg:
 
 #### const
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const原本是C语言中的关键字，在ES中，const定义的也是一个局部变量，没有变量提升，不允许重复定义，受块级作用域限制，但受到作用域链限制，同时不允许修改属性值（这里其实指的是不允许修改变量指向的地址）。  
-```bash 
+```javaScript
 eg:
   console.log(name);   // 未声明前使用也会报错
   const name = 'zs';   // 一般声明时，变量要大写，不要学我😅
@@ -52,7 +52,7 @@ eg:
 
 #### 解构赋值
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;顾名思义，对变量原有的结构进行解析，以一定的方式赋给其他变量。  
-```bash
+```javaScript
 eg:
   数组:
     let age = [18, 19, 20, 21];
@@ -66,7 +66,7 @@ eg:
 
 ### 模版字符串
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在原本的js语法中，定义的字符串有两种`''`和`""`两种，在ES6中新增了一种模版字符串\``(英文模式下左上角第二行第一个)。
-```bash
+```javaScript
 eg:
   let name = `字符串`;
   let testStr = `我也是
@@ -75,7 +75,7 @@ eg:
 ```
 ### 扩展运算符...
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在ES6中除了简写形式，还为我们提供了一种比较好玩的运算符`...`。其作用是展开对象，能将数组转换为逗号分隔的参数序列，相当于把数组压平，展开在需要的地方，示例如下。
-```bash
+```javaScript
 eg:
   let age1 = [18, 19];
   let age2 = [20, 21];
@@ -89,7 +89,7 @@ eg:
 
 ### 对象简写
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在以往定义对象时，我们往往会写出这样的代码`name:name`，在ES6中为这种形式添加了专门的简写形式。
-```bash
+```javaScript
 eg:
   let name = 'zs';
   // let studentXiao = {name:name,age:18};
@@ -99,7 +99,7 @@ eg:
 
 ### 箭头函数()=>{}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在以往定义函数时，我们都会使用`function name(){}`来定义一个函数，如下：
-```bash
+```javaScript
 eg:
   let studentXiao = {name: 'zs',age: 18};
   let getAge = (value1,value2)=>{
@@ -114,7 +114,7 @@ eg:
 
 ### 函数的参数
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在ES6语法中允许对函数的形参赋初始值，当外部未传递参数时，使用默认值，同时传递参数时也可以使用解构赋值以及扩展运算符接收剩余参数rest，示例如下：
-```bash
+```javaScript
 eg: 默认参数值
   function getNumber1(a = 0, c = 10, b){   // 对形参赋初始值
     retrun a + b + c;
@@ -142,7 +142,7 @@ eg:剩余参数rest
 
 ### 基本数据类型symbol
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;symbol是ES6提供的新的数据类型，因为symbol的值唯一，在一定程度上可以解决命名冲突的问题。symbol数据类型不能和其他数据类型做计算，同时定义的symbol对象不能被for遍历，需要其自带的方法Reflect.ownKeys，示例如下：
-```bash
+```javaScript
 eg: 定义一个symbol
   let a = Symbol('a');
   let b = Symbol('a');

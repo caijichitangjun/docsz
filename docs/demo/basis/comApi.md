@@ -19,7 +19,7 @@ publish: true
 <span style="color:red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这里介绍的组合式Api只是常用的一些，[非常用Api](./comApiOthers.md)。</span>  
 
 ### vue2
-```
+```vue
 <script>
   import trySlot from "./trySlot";    
   export default {
@@ -55,7 +55,7 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在vue2中，定义数据和方法时，直接定义在指定位置即可使用，如上。
 
 ### vue3
-```
+```vue
 <script>
   import trySlot from "./trySlot";    
   import {ref,reactive} from 'vue'

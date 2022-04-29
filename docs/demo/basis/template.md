@@ -18,7 +18,7 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相信在这里大家,大家已经下载好了vue的相关工具，下面让我们开始学习vue文件的基本格式吧！（其实和我们学过的html、css、js文件并无不同，只是将他们糅合在一起）
 
 ### vue模版
-```
+```vue
 <template>
   <div>
     {{ Welcome }}  // 这个就是插值语法，{{}}

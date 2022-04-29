@@ -21,7 +21,7 @@ publish: true
 > 5. vue-resource: vue的插件库
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;综合以上的考虑，在vue和react中我们使用的仍是axios，写法如下，未来可能会使用到fetch。
-```
+```js
   export function login(username,password) {
     return axios({ 
       url: '/login',
@@ -33,7 +33,7 @@ publish: true
 
 ### vue-resource
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vue-resource插件在vue1版本使用较为频繁，在以后的2和3版本中还是更推荐axios，了解即可。  
-```
+```js
 main.js:
   import vueResource from 'vue-resource'
   Vue.use(vueResource)
@@ -50,7 +50,7 @@ main.js:
 
 ### 响应与拦截
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;axios还有另一个值得称赞的点，axios可以配置响应和请求拦截器，请求拦截器可以在前端发送请求后统一的为请求添加cookie、headers等信息，同时对错误的请求信息做统一处理；响应拦截器主要是对请求返回的结果进行处理，例如取出数据、展示出错类型等，示例如下：
-```
+```js
 （1）创建axios实例
   const xhr = axios.create({
     baseURL: '/api',   // 作为前置信息，会加在请求时的url之前，如url:'/login', 混合后的url为/api/login，一般和代理服务器配合使用。
@@ -104,7 +104,7 @@ main.js:
 
 #### vue-cli代理
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vue提供给我们的代理服务器其实就是我们的项目本身，代理服务会优先访问本地的数据，因此请求信息时应尽量少使用相同的路径，避免请求错误。[官网参考](https://cli.vuejs.org/zh/config/#devserver-proxy)，
-```
+```js
 module.exports = {
   devServer: {
     proxy: {

@@ -25,7 +25,7 @@ publish: true
 
 ### 项目准备
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;需要准备两个文件夹分别保存处理前的`.scss`文件和处理后的`.css`文件。
-```
+```scss
 sass/     // 该目录存储scss文件
 css/      // 该目录存储css文件
 ```
@@ -52,7 +52,7 @@ css/      // 该目录存储css文件
 
 #### string及相关函数
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number也是sass中的一种数据类型，`'name'`和`name`都算作是字符串，同样可以运用运算符连接字符串，如下:
-```
+```scss
 name + 'space'  ==> 'namespace'
 name - 800      ==> 'name-800'
 name / dog      ==> 'name/dog'
@@ -80,7 +80,7 @@ name / dog      ==> 'name/dog'
 
 #### list及相关函数
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list也是sass中的一种数据类型，`1px solid red`、`0 0 0 0`和`1px,1px`都算作是list，在sass中list的分隔符可以是空格、逗号、括号等。当一个数据中出现多总分隔符时会被认定为多个列表，如下：  
-```
+```scss
 padding: 5px 10px, 5px 0;   // 这是两个列表list
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在sass中还有为list提供的一些函数，如下：
@@ -109,7 +109,7 @@ padding: 5px 10px, 5px 0;   // 这是两个列表list
 ### sass嵌套语法
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在css文件中，对于一个嵌套层级较深的层级来说，要拿到内层的元素需要一层一层的取，当内层元素较多时，定位标签时，往往编写了大量的重复代码，费时费力且不易维护。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在sass中，编写代码可以嵌套这些，就像是在html的层级一样，方便后期维护。  
-```
+```html
 html:
   <div class="name">
     <div>
@@ -141,7 +141,7 @@ html:
 ### 属性复用
 #### mixin
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果看过本人写的vue文章，应该对`mixin`不陌生，简单来说，`mixin`就是定义的是一个可供当前所有选择使用的公共属性。定义方式如下：
-```
+```scss
 // 定义
 @mixin mixinName(vlaue1,value2,...){
   // 在下图中，我们会给一个示例供大家理解。
@@ -170,7 +170,7 @@ html:
 
 #### @for
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同在js循环条件一样，知道条件不满足时取消循环。例如  
-```
+```scss
 @for $i from 开始值 through 结束值   // 相当于 ≤
 @for $i from 开始值 to 结束值        // 相当于 <
  
@@ -187,7 +187,7 @@ html:
 
 ### @import
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;受组件化编码的影响，我们编写的样式可能在不同的文件中，这时就需要使用`@import`引入，如下：  
-```
+```scss
 正常引入：@import "main.scss";
 Partials引入：@import "base";
 ```
@@ -195,7 +195,7 @@ Partials引入：@import "base";
 
 ### 注释
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sass为我们提供了三种注释的写法，如下：
-```
+```scss
 1. 双斜线的单行注释：
   // 我是单行注释
 2. 斜线加星号的多行注释

@@ -15,7 +15,7 @@ publish: true
 
 ### 自定义动画
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vue动画的作用，在插入、更新或移除DOM元素时，在合适的时候给元素添加样式类名。
-```
+```css
 @keyframes tryAnimation {    /**效果相当于元素从远方到面前 */
   from{          
     transform: translateX(-100%);

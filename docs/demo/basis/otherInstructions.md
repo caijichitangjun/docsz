@@ -16,7 +16,7 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在前面几篇文章中，我们稍微讲解了v-bind、v-show、v-if、v-else、v-for等指令，这些都是使用很平凡的指令，在这篇文章中，我们介绍的就是那些使用或许不是那么多的指令。
 
 ###  v-text
-```
+```vue
   <template>
     <div>
         <div v-text="firstName">你好</div>   ---> 张三
@@ -32,6 +32,7 @@ publish: true
       }
     },
   }
+  </script>
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 作用:向其所在的节点中渲染文本内容。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 与插值语法的区别:v-text会替换掉节点中的内容，{{xx}}则不会。  
@@ -39,13 +40,14 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. 总结成一句话是，用处不大，了解即可。  
 
 ### v-html
-```
+```vue
   <template>
     <div>
         <div v-html="str"></div>   ---> 张三(h3格式下的)
     </div>
     <!-- 这两个的效果是一样的 -->
   </template>
+
   <script>
   export default {
     data() {
@@ -54,18 +56,20 @@ publish: true
       }
     },
   }
+  </script>
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该指令于v-text指令效果类似，只不过v-html解析时，遇到字符串内含有标签，v-html也能将其是做一个标签。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该指令有[安全问题](https://www.bilibili.com/video/BV1Zy4y1K7SH?p=41)，不推荐使用。  
 
 ### v-cloak
-```
+```vue
   <template>
     <div>
         <div v-cloak>{{str}}</div>   ---> 张三(h3格式下的)
     </div>
     <!-- 这两个的效果是一样的 -->
   </template>
+
   <script>
   export default {
     data() {
@@ -74,6 +78,8 @@ publish: true
       }
     },
   }
+  </script>
+
   <style scoped >   
   /* scoped是用于控制组件时的命名冲突问题 */
   /* [v-cloak]是选中所有标签中带有v-cloak的 */
@@ -85,13 +91,14 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v-cloak指令会在vue介入容器时被删除，没有属性值。其主要解决的是在非项目开发中使用vue时，由于使用在线引入的vue.js请求时间过长，导致页面上展示时全是花括号{。  
 
 ### v-once
-```
+```vue
   <template>
     <div>
         <div v-once>{{str}}</div>   ---> 张三
     </div>
     <!-- 这两个的效果是一样的 -->
   </template>
+
   <script>
   export default {
     data() {
@@ -100,18 +107,20 @@ publish: true
       }
     },
   }
+  </script>
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.v-once所在节点在初次动态渲染后,就视为静态内容了。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.以后数据的改变不会引起v-once所在结构的更新，可以用于优化性能。
 
 ### v-pre
-```
+```vue
   <template>
     <div>
         <div v-once>{{str}}</div>   ---> {{str}}
     </div>
     <!-- 这两个的效果是一样的 -->
   </template>
+
   <script>
   export default {
     data() {
@@ -120,6 +129,7 @@ publish: true
       }
     },
   }
+  </script>
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.跳过其所在节点的编译过程。v-once是只生效一次，而v-pre一次都不生效。    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.跳过没有指令语法、插值语法的节点，会加快编译速度。  
@@ -128,7 +138,7 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在vue中，我们除了可以使用其为我们设置好的指令，我们也可以去设置我们自己喜欢的指令，设计指令有两种方式，函数式和对象式。  
 
 ### 函数式
-```
+```vue
   <template>
     <div>
       <div v-text="firstName"></div>
@@ -136,6 +146,7 @@ publish: true
       // 显示的是把n放大10倍:10
     </div>
   </template>
+  
   <script>
   export default {
     data() {
@@ -150,12 +161,12 @@ publish: true
       }
     }
   }
-</script>
+  </script>
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;函数可以接到两个参数，第一个参数是写有我们书写的v-big的标签的真实dom节点，例如此时接收到的就是整个span标签，第二个参数binding，意为将标签与指令绑定，会获取到我们写有自建指令的内容，我们通常使用的多的是value属性，代表着指令中绑定的值。
 
 ### 对象式
-```
+```js
   directives:{
     big:{
       bind(element,binding){     // 指令与元素绑定成功时调用

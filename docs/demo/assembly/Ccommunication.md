@@ -18,7 +18,7 @@ publish: true
 
 ### 自定义事件
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自定义事件主要适用于子组件向父组件传递数据，和我们介绍过的props比较类似。  
-```
+```vue
   <template>
     <div>
       <el-button @click="triggerCustomEvent"></el-button>
@@ -42,7 +42,7 @@ publish: true
   };
   </script>
 ```
-```
+```vue
   <template>
     <div>
       <student v-on:bindEvent="testCustomEvent"/>
@@ -79,7 +79,7 @@ publish: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果需要实现任意两个组件间的通信，那么就需要每一个组件都可以访问到全局事件总线，其次全局事件总线必须有\$off、\$emit、\$on这些Api。不知道大家记不记得我们在介绍组件的时候和大家提到过只要是Vuecomponents缔造的组件实例对象，他们的祖辈最终都指向了Vue的构造者，在Vue上为其添加一个Vue实例对象当做傀儡不就行了。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;问题随之而来，怎么拿到拿到Vue的实例对象？  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;仔细回想下，我们好像创建过Vue的实例对象，实在介绍render和createApp时，好像这两个函数所处的位置就是帮我们创建Vue的实例对象，同时，我们在介绍Vue模版和Vue组件时还想提到过this的指向问题，好像创建Vue实例对象时，其内部的this好像就指向创建的Vue实例对象。说到这里，问题就都解决了。  
-```
+```js
 main.js中
   new Vue({
     el:'root',
@@ -97,22 +97,27 @@ main.js中
 > 1. 安装pubsub:  npm i pubsub-js
 > 2. 引入: 在需要的地方使用 import pubsub from 'pubsub-js'
 > 3. 接收数据:A组件想接收数据，则在A组件中订阅消息，订阅的回调留在A组件自身。
-```
-  methods(){  
-    demo(name){    // 订阅消息后触发的事件
-      
-    }
-  },
-  mounted() {
-    this.pid = pubsub.subscribe('pubsubInfo", this.demo)  //订阅消息
-  }
+```vue
+  <script>
+    import trySlot from "./trySlot";    
+    export default {
+      methods(){  
+        demo(name){    // 订阅消息后触发的事件
+          
+        }
+      },
+      mounted() {
+        this.pid = pubsub.subscribe('pubsubInfo", this.demo)  //订阅消息
+      }
+    };
+  </script>
 ```
 > 4. 提供数据与订阅消息: pubsub.publish('pubsubInfo", name)  
 > 5. 最好在beforeDestroy钩子中，用PubSub.unsubscribe(pid)去取消订阅。  
 
 ### $nextTick
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在我们希望隐藏的输入框显示时可以获取焦点时，因为Vue解析模版会在当前js区所以代码执行完毕后，再更新html模版，我们无法为尚未显示的内容获取焦点，因此需要获取焦点的代码延迟生效。
-```
+```js
 1. settimeout
   <input type="text" v-show="isShow" :value="value">
   triggerCustomEvent(){    // 触发显示和隐藏的按钮事件
