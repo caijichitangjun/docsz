@@ -1,5 +1,6 @@
 <template>
   <div class="typer">
+    <span class="auther">{{ auther }}</span>
     <div class="typer-content">
       <!-- 动态变化的内容-->
       <p class="typer-dynamic">
@@ -21,6 +22,7 @@ export default {
   name:'TypeWriter',
   data() {
     return {
+      auther: 'QianXiao',
       words: [], //字母数组push，pop的载体
       strs: ["风吹过面颊，是否能回想起...","曾经向往着长大，如今却只剩回忆","作为一条咸鱼，也想翻下身子","浅笑的个人空间欢迎你"],  //文字的汇集区
       order: 0,  //表示当前是第几句话
@@ -91,7 +93,7 @@ export default {
   margin-top: 2%;
   box-sizing: border-box;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
@@ -117,6 +119,19 @@ export default {
   right: -10px;
   background-color: #e84d49;
   animation: flash 1.5s linear infinite;
+}
+.auther{
+  font-size: 40px;
+}
+.study{
+  background-color: transparent; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
 }
 </style>
 

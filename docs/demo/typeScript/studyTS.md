@@ -54,7 +54,7 @@ eg:
 | tuple | `[1, 2]`| `let age:[string, number] = ['123', 123]`| ts新类型，定长数组 |
 | enum | `enum{1, 2}`| 如下代码所示 | TS中新增类型，枚举 |
 | 可选类型 | `1 | '1'`| `let age:number | string = 10; age = '10'`| 在标识的类型中选择一种满足即可 |
-```bash
+```typeScript
 eg:
   enum Color {   // 枚举数据类型，默认从0开始，常用于控制流程。
     Red,     // 如此时Color.Red = 0，当然你也可以自行对枚举中的内容进行赋值，如 Red = 2, Green = 5, ...

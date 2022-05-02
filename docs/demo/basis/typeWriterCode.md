@@ -4,9 +4,10 @@ description: '实现类似的打字机效果'
 date: ''
 sidebar: 'auto'
 categories: 
- - js
+ - JavaScript
 tags: 
- - js
+ - vue
+ - JavaScript
 prev: false
 next: false
 publish: true

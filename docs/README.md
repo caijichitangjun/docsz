@@ -1,13 +1,25 @@
 ---
 home: true
+heroImage: /hero.png
+heroImageStyle: {
+  maxHeight: '200px',
+  display: block,
+  margin: '6rem auto 1.5rem',
+  borderRadius: '50%',
+  boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
+}
+bgImage: '/hero.png'
+
+---
+
+<!-- ---
+home: true
 tagline: ' '
-heroText: QianXiao
+heroText: ' '
 # bgImagestyle: { height: 100%, wight: 100%}
 # heroTextStyle: { color: "#fff"}
 # bgImage: '/hero.png'
 isshowTitleInHome: false
 ---
-<!-- ![](./bgimg.png) -->
-<TypeWriter />
-
-
+<test>
+</test> -->

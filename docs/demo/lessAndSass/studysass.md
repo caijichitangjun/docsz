@@ -4,10 +4,11 @@ description: '预处理器sass的简单介绍'
 date: ''
 sidebar: 'auto'
 categories: 
- - Preprocessor
+ - css
 tags: 
  - Preprocessor
  - sass
+ - css
 prev: ./studyless
 next: ./studyless
 publish: true

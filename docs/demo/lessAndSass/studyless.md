@@ -4,10 +4,11 @@ description: '预处理器less的简单介绍'
 date: ''
 sidebar: 'auto'
 categories: 
- - Preprocessor
+ - css
 tags: 
  - Preprocessor
  - less
+ - css
 prev: ./studysass
 next: ./studysass
 publish: true

@@ -10,6 +10,7 @@ module.exports = {
   themeConfig: {
     logo: '/assets/img/mydaughter.jpg',
     author: 'qianxiao',
+    type: 'test',
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '个人信息', link: '/personalInformation/my' },
@@ -75,22 +76,3 @@ module.exports = {
   },
 }
 
-// plugins:[
-//   [
-//     '@vuepress/active-header-links',{
-//       sidebarLinkSelector: '.sidebar-link',
-//       headerAnchorSelector: '.header-anchor'
-//     }
-//   ],[
-//     '@vuepress/back-to-top',true
-//   ],[
-//     'vuepress-plugin-code-copy',{
-//       selector: 'div[class*="language-"]',
-//       align: 'bottom',
-//       color: '#27b1ff',
-//       backgroundTransition: true,
-//       backgroundColor: '#0075b8',
-//       successText: 'Copied!'
-//     }
-//   ]
-// ]

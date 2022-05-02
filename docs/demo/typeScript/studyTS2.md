@@ -1,5 +1,5 @@
 ---
-title: TypeScript-类的延伸
+title: TypeScript-类与方法的延伸
 description: '简介TypeScript的类、继承、接口、泛型'
 date: ''
 sidebar: 'auto'
