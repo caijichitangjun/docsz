@@ -8,18 +8,8 @@ heroImageStyle: {
   borderRadius: '50%',
   boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
 }
-bgImage: '/hero.png'
-
----
-
-<!-- ---
-home: true
-tagline: ' '
-heroText: ' '
-# bgImagestyle: { height: 100%, wight: 100%}
-# heroTextStyle: { color: "#fff"}
 # bgImage: '/hero.png'
-isshowTitleInHome: false
 ---
-<test>
-</test> -->
+
+
+

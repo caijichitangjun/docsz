@@ -50,7 +50,13 @@ module.exports = {
           artist: '冯提莫',
           url: '/assets/mp4/meihao.mp3',
           cover: '/assets/img/meihao.jpg'
-        }
+        },
+        {
+          name: '逍遥戏',
+          artist: '酒禾',
+          url: '/assets/mp4/xiaoyao.mp3',
+          cover: '/assets/img/xioayao.jpg'
+        },
       ] ,
       autoShrink: true ,    // 是否默认缩小
       shrinkMode: 'float',  // 缩小时缩为哪种模式

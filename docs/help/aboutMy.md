@@ -17,6 +17,8 @@ sticky: 1
 这里是我的个人介绍啦！🍎 🍏 🍊 🍋 🍒 🍇 🍉 🍓 🍑
 :::
 
+<!-- more -->
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果你也想要上方的图标，请跳转：[[图标](./useIcon.md)]。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;寄语中纯属胡说，如有不同，以你为准。
 

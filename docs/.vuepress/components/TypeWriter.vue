@@ -13,6 +13,7 @@
         <span class="typer-cursor"></span>
       </p>
     </div>
+    <router-link class="route" to="/tag">启程↗️🚢</router-link>
   </div>
 </template>
 
@@ -132,6 +133,10 @@ export default {
   text-decoration: none;
   display: inline-block;
   font-size: 26px;
+}
+.route{
+  font-size: 26px;
+  color: rgb(96, 235, 182);
 }
 </style>
 

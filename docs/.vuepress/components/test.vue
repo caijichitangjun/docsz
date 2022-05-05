@@ -15,9 +15,13 @@ export default {
     }
   },
   created() {},
-  mounted() {},
+  mounted() {
+    this.init();
+  },
   methods: {
-    
+    init(){
+      console.log(this.$frontmatter)
+    }
   },
 }
 </script>
@@ -34,4 +38,5 @@ img{
   width: 100%;
   height: 100%;
 }
+
 </style>

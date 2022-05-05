@@ -7,7 +7,7 @@ categories:
  - html
 tags: 
  - html
- - js
+ - JavaScript
 prev: ./template
 next: ./vuedata
 publish: true
