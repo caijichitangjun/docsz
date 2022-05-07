@@ -32,7 +32,17 @@ module.exports = {
         location: 3,     // 在导航栏菜单中所占的位置，默认3
         text: '标签',      // 默认文案 “标签”
       },
-    }
+    },
+    vssueConfig: {
+      // set `platform` rather than `api`
+      platform: 'github',
+      // all other options of Vssue are allowed
+      owner: 'caijichitangjun',
+      repo: 'docsz',
+      clientId: '7c86509a162e192038cc',
+      clientSecret: '4f01d68d9b096b35a88fe5a7cf201ec2054d672f',
+      autoCreateIssue: true,
+    },
   },
   plugins: {
     //以下为插件，需要add安装/添加
@@ -47,20 +57,20 @@ module.exports = {
         {
           name: '雪月',
           artist: '王玲琳',
-          url: '/assets/mp4/xueyue.mp3',
-          cover: '/assets/img/xueyue.jpg'
+          url: '/docsz/assets/mp4/xueyue.mp3',
+          cover: '/docsz/assets/img/xueyue.jpg'
         },
         {
           name: '世间美好与你环环相扣',
           artist: '冯提莫',
-          url: '/assets/mp4/meihao.mp3',
-          cover: '/assets/img/meihao.jpg'
+          url: '/docsz/assets/mp4/meihao.mp3',
+          cover: '/docsz/assets/img/meihao.jpg'
         },
         {
           name: '逍遥戏',
           artist: '酒禾',
-          url: '/assets/mp4/xiaoyao.mp3',
-          cover: '/assets/img/xioayao.jpg'
+          url: '/docsz/assets/mp4/xiaoyao.mp3',
+          cover: '/docsz/assets/img/xiaoyao.jpg'
         },
       ] ,
       autoShrink: true ,    // 是否默认缩小
@@ -85,10 +95,20 @@ module.exports = {
       zIndex: 10000, // z-index property of the canvas, default: 999999999
     },
     '@vuepress/last-updated': {
-        transformer: (timestamp) => {
-          return moment(timestamp).format('LLLL')
-        }
+      transformer: (timestamp) => {
+        return moment(timestamp).format('LLLL')
       }
+    },
+    // '@vssue/vuepress-plugin-vssue': {
+    //   // set `platform` rather than `api`
+    //   platform: 'github',
+    //   // all other options of Vssue are allowed
+    //   owner: 'caijichitangjun',
+    //   repo: 'docsz',
+    //   clientId: '7c86509a162e192038cc',
+    //   clientSecret: '4f01d68d9b096b35a88fe5a7cf201ec2054d672f',
+    //   autoCreateIssue: true,
+    // },
   },
 }
 

@@ -118,7 +118,7 @@ main.js中
 ### $nextTick
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在我们希望隐藏的输入框显示时可以获取焦点时，因为Vue解析模版会在当前js区所以代码执行完毕后，再更新html模版，我们无法为尚未显示的内容获取焦点，因此需要获取焦点的代码延迟生效。
 ```js
-1. settimeout
+// 1. settimeout
   <input type="text" v-show="isShow" :value="value">
   triggerCustomEvent(){    // 触发显示和隐藏的按钮事件
     this.isShow = true
@@ -126,7 +126,7 @@ main.js中
       this.$refs.inputWord.focus()
     },200)
   }
-2. nextTick
+// 2. nextTick
 <input type="text" v-show="isShow" :value="value">
   triggerCustomEvent(){    // 触发显示和隐藏的按钮事件
     this.isShow = true
@@ -136,5 +136,4 @@ main.js中
   }
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nextTick的作用是在下一次DOM更新结束后执行指定的回调，延迟生效。一般适用于，更改某些数据，要基于改变之后的DOM进行某项操作。
-
 

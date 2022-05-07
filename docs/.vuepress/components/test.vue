@@ -1,6 +1,7 @@
 <template>
   <div class="test">
-    <img src="/assets/img/hero.png" alt="">
+    <img src="../public/assets/img/hero.png" alt="">
+    <!-- <img src="/assets/img/hero.png" alt=""> -->
     <TypeWriter/>
   </div>
 </template>
@@ -9,18 +10,12 @@
 import TypeWriter from './TypeWriter.vue'
 export default {
   components: { TypeWriter },
-  data() {
-    return {
-      
-    }
-  },
-  created() {},
   mounted() {
     this.init();
   },
   methods: {
     init(){
-      console.log(this.$frontmatter)
+      // console.log(this.$frontmatter)
     }
   },
 }

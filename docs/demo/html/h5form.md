@@ -79,19 +79,19 @@ list:[
 + tooShort: false  // 代表最小长度，恒等于false，即使设置了最小长度
 + typeMismatch: false  // 代表不符合某种类型
 + valid: false   // 当其他值为false时，会变为true，代表没有检测
-+ valueMissing: true // 代表required
-  （1）willValidate: 指定 input 是否需要验证
-  （2）validaty : 属性值如上所示
-  （3）ValidationMessage : 用于描述与元素相关约束的失败信息。
-  （4）checkValidaty() 方法 : 如果元素没有满足它的任意约束，则返回false，否则返回true
-  （5）setCustomValidity()方法 : 当某项验证不满足时，设置提示信息。
++ valueMissing: true // 代表required  
+  （1）willValidate: 指定 input 是否需要验证  
+  （2）validaty : 属性值如上所示  
+  （3）ValidationMessage : 用于描述与元素相关约束的失败信息。  
+  （4）checkValidaty() 方法 : 如果元素没有满足它的任意约束，则返回false，否则返回true  
+  （5）setCustomValidity()方法 : 当某项验证不满足时，设置提示信息。  
 
 ### css设置
-11. 常用伪类
-  （1）:required和:optional   （:required指选择器在表单元素是必填项时设置指定样式，后者指任意没有required属性）
-  （2）:in-range和:out-of-range  （in-range对元素绑定的值在指定范围限制内时具有范围限制的元素进行样式设置。，）
-  （3）:valid和:invalid   （valid有效，即当填写的内容符合要求的时候触发）
-  （4）:read-only和:read-write  （:read-write当一个元素是可编辑元素时，可以修改其样式，read-write只针对当一个可编辑元素被赋予readonly（只读）属性时，可以修改其样式）
+11. 常用伪类  
+  （1）:required和:optional   （:required指选择器在表单元素是必填项时设置指定样式，后者指任意没有required属性）  
+  （2）:in-range和:out-of-range  （in-range对元素绑定的值在指定范围限制内时具有范围限制的元素进行样式设置。，）  
+  （3）:valid和:invalid   （valid有效，即当填写的内容符合要求的时候触发）  
+  （4）:read-only和:read-write  （:read-write当一个元素是可编辑元素时，可以修改其样式，read-write只针对当一个可编辑元素被赋予readonly（只读）属性时，可以修改其样式）  
 
 12. 常用属性使用
   text-indent 属性规定文本块中首行文本的缩进

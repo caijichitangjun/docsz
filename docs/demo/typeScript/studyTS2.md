@@ -14,7 +14,7 @@ publish: true
 ---
 
 ## 类class
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什么是类？，简单来说就是一些具有相同特征(属性)的对象的集合体。以`class`为关键字定义，类内部内容和js代码相似，可以以`new`关键字创建一个集合体`class`的实例，每一个实例间互不相同。  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什么是类？简单来说就是一些具有相同特征(属性)的对象的集合体。以`class`为关键字定义，类内部内容和js代码相似，可以以`new`关键字创建一个集合体`class`的实例，每一个实例间互不相同。  
 ```typeScript
 eg:
   class peoper{   // 定义一个类
