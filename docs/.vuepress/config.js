@@ -1,4 +1,8 @@
+const moment = require('moment');
+moment.locale("zh-cn")
+
 module.exports = {
+  base:'/docsz/',
   title: 'QianXiao',
   description: '一枚小菜鸡的学习日记',
   head: [
@@ -9,14 +13,15 @@ module.exports = {
   theme: 'reco',
   themeConfig: {
     logo: '/assets/img/mydaughter.jpg',
+    lastUpdated: '更新时间',
     author: 'qianxiao',
     type: 'test',
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
-      { text: '个人信息', link: '/personalInformation/my' },
+      { text: '个人信息', link: '/help/aboutMy' },
       { text: '实例代码', link: '/code/property', icon: 'reco-github' },
       { text: '帮助', link: '/help/h1', icon: 'reco-faq' },
-      { text: '意见收集', link: '/opinionCollection', icon: 'reco-message' }
+      { text: '意见收集', link: '/help/opinionCollection', icon: 'reco-message' }
     ],
     blogConfig: {
       category: {
@@ -78,7 +83,12 @@ module.exports = {
       size: 2, // size of the particle, default: 2
       shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
       zIndex: 10000, // z-index property of the canvas, default: 999999999
-    }
+    },
+    '@vuepress/last-updated': {
+        transformer: (timestamp) => {
+          return moment(timestamp).format('LLLL')
+        }
+      }
   },
 }
 

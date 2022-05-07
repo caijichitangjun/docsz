@@ -13,7 +13,7 @@
         <span class="typer-cursor"></span>
       </p>
     </div>
-    <router-link class="route" to="/tag">启程↗️🚢</router-link>
+    <router-link class="route" :to="routers">启程↗️</router-link>
   </div>
 </template>
 
@@ -29,6 +29,7 @@ export default {
       order: 0,  //表示当前是第几句话
       str: "风吹过面颊，是否能回想起...", //str初始化
       letters: [], //str分解后的字母数组
+      routers:'/tag'
     };
   },
   watch: {

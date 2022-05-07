@@ -8,8 +8,8 @@ categories:
 tags: 
  - html
  - JavaScript
-prev: ./template
-next: ./vuedata
+prev: false
+next: false
 publish: true
 ---
 
@@ -18,7 +18,10 @@ publish: true
 ### html设置
 
 1. 提示语言 placeholder  
-  移动端不支持:\<input placeholder="这里是提示语言，当输入内容时消失" type="text" id="date" />         
+  移动端不支持:
+  ```html
+    <input placeholder="这里是提示语言，当输入内容时消失" type="text" id="date" />
+  ```
 
 2. html5表单中新增类型  
   email、url、number、range、date(date, month, week, time, datetime,datetime-local)、search、color、tel等
@@ -31,6 +34,7 @@ publish: true
     <input type="text" name="" id="" autocomplete="off">
   </form>
 ```
+
 4. 提示选择 list和datalist  
   list和datalist为选择框内容，内部为value和label的对象组合
 ```javaScript
@@ -102,4 +106,3 @@ list:[
   oninput   事件在用户输入时触发
   oninvalid  输入无效时触发
   onchange   在表单元素的内容改变时触发
-
