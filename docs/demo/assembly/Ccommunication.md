@@ -1,7 +1,7 @@
 ---
 title: 组件间通信
 description: 'vue-cli搭建的项目的相关内容简介'
-date: ''
+date: '2022-4-17'
 sidebar: 'auto'
 categories: 
  - vue

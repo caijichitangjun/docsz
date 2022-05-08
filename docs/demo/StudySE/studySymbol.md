@@ -1,7 +1,7 @@
 ---
 title: Symbol的内置值
 description: '简介ES6的Symbol的内置值'
-date: ''
+date: '2022-4-28'
 sidebar: 'auto'
 categories: 
  - JavaScript

@@ -1,7 +1,7 @@
 ---
 title: css经典'三栏'布局
 description: '盒子模型之css布局'
-date: ''
+date: '2022-5-1'
 sidebar: 'auto'
 categories: 
  - css

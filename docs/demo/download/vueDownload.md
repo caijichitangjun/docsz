@@ -1,7 +1,7 @@
 ---
 title: vue下载与安装
 description: 'vue的入门指导，开启你的前端学习吧！'
-date: ''
+date: '2022-4-10'
 sidebar: 'auto'
 categories: 
  - vue

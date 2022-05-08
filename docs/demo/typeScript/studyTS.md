@@ -1,7 +1,7 @@
 ---
 title: TypeScript-类型重塑
 description: '简介TypeScript的特点、安装以及编译'
-date: ''
+date: '2022-4-27'
 sidebar: 'auto'
 categories: 
  - JavaScript

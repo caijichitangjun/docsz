@@ -1,7 +1,7 @@
 ---
 title: compilerOptions子配置详细介绍
 description: '简介compilerOptions子配置'
-date: ''
+date: '2022-4-27'
 sidebar: 'auto'
 categories: 
  - JavaScript

@@ -1,7 +1,7 @@
 ---
 title: vue基础-计算与监视属性
 description: '在进行项目讲解前的vue基础讲解'
-date: ''
+date: '2022-4-10'
 sidebar: 'auto'
 categories: 
  - vue

@@ -20,8 +20,9 @@ module.exports = {
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '个人信息', link: '/help/aboutMy' },
       { text: '实例代码', link: '/code/property', icon: 'reco-github' },
+      { text: '时间线', link: '/timeline/', icon: 'reco-date' },
       { text: '帮助', link: '/help/h1', icon: 'reco-faq' },
-      { text: '意见收集', link: '/help/opinionCollection', icon: 'reco-message' }
+      { text: '意见收集', link: '/help/question', icon: 'reco-message' }
     ],
     blogConfig: {
       category: {

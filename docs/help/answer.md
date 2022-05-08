@@ -1,7 +1,7 @@
 ---
 title: 小讨论之遗憾
 description: '讨论'
-date: ''
+date: '2022-5-1'
 sidebar: 'left'
 categories: 
  - discuss

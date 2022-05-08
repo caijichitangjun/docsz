@@ -1,7 +1,7 @@
 ---
 title: html5表单验证
 description: '在进行项目讲解前的vue基础讲解'
-date: ''
+date: '2022-4-30'
 sidebar: 'auto'
 categories: 
  - html

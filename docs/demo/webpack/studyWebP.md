@@ -1,7 +1,7 @@
 ---
 title: webpack资源打包（上）
 description: '简介webpack资源打包的相关配置'
-date: ''
+date: '2022-4-26'
 sidebar: 'auto'
 categories: 
  - webpack

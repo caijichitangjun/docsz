@@ -1,7 +1,7 @@
 ---
 title: 关于作者
 description: ''
-date: ''
+date: '2022-4-25'
 sidebar: 'auto'
 categories: 
  - help

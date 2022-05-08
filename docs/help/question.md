@@ -1,7 +1,7 @@
 ---
 title: 问题征集
 description: '收集在文档编写过程中的路径、格式等问题'
-date: ''
+date: '2022-5-1'
 sidebar: 'left'
 categories: 
  - help

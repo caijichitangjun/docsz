@@ -1,7 +1,7 @@
 ---
 title: 数组的常见方法
 description: '数组的常见方法'
-date: ''
+date: '2022-5-1'
 sidebar: 'auto'
 categories: 
  - JavaScript

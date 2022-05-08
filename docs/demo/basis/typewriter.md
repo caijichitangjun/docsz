@@ -1,7 +1,7 @@
 ---
 title: 首页打字机效果
 description: '实现类似的打字机效果'
-date: ''
+date: '2022-4-10'
 sidebar: 'auto'
 categories: 
  - JavaScript

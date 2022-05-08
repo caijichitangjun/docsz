@@ -1,7 +1,7 @@
 ---
 title: vue模版与MVVM模型
 description: 'vue文件的格式是怎样的？'
-date: ''
+date: '2022-4-10'
 sidebar: 'auto'
 categories: 
  - vue

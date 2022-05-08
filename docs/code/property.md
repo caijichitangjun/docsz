@@ -1,7 +1,7 @@
 ---
 title: 小菜鸡的实例代码
 description: '小菜鸡大学生涯参与过的代码练习'
-date: ''
+date: '2022-4-10'
 sidebar: 'auto'
 categories: 
  - code
