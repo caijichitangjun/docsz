@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[55],{668:function(t,n,s){"use strict";s.r(n);var e=s(5),o=Object(e.a)({},(function(){var t=this.$createElement,n=this._self._c||t;return n("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[n("p",[n("strong",[this._v("你认为什么才是遗憾呢？")])])])}),[],!1,null,null,null);n.default=o.exports}}]);

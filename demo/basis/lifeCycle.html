@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue基础-生命周期 | QianXiao</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/docsz/assets/img/logo.ico">
+    <meta name="description" content="在进行项目讲解前的vue基础讲解">
+    
+    <link rel="preload" href="/docsz/assets/css/0.styles.b8a772e3.css" as="style"><link rel="preload" href="/docsz/assets/js/app.22c8ad57.js" as="script"><link rel="preload" href="/docsz/assets/js/3.837f952b.js" as="script"><link rel="preload" href="/docsz/assets/js/1.3b490a96.js" as="script"><link rel="preload" href="/docsz/assets/js/18.4f4f943d.js" as="script"><link rel="prefetch" href="/docsz/assets/js/10.9778ad93.js"><link rel="prefetch" href="/docsz/assets/js/11.0a0ed3b5.js"><link rel="prefetch" href="/docsz/assets/js/12.5cf01cbe.js"><link rel="prefetch" href="/docsz/assets/js/13.5e135359.js"><link rel="prefetch" href="/docsz/assets/js/14.5f00995e.js"><link rel="prefetch" href="/docsz/assets/js/15.1e067037.js"><link rel="prefetch" href="/docsz/assets/js/16.3e498ed7.js"><link rel="prefetch" href="/docsz/assets/js/17.a3c13a2f.js"><link rel="prefetch" href="/docsz/assets/js/19.f12447de.js"><link rel="prefetch" href="/docsz/assets/js/20.7f1fb3a7.js"><link rel="prefetch" href="/docsz/assets/js/21.718d4e9c.js"><link rel="prefetch" href="/docsz/assets/js/22.ce9172d8.js"><link rel="prefetch" href="/docsz/assets/js/23.dc70db5d.js"><link rel="prefetch" href="/docsz/assets/js/24.272a291a.js"><link rel="prefetch" href="/docsz/assets/js/25.0d01fa50.js"><link rel="prefetch" href="/docsz/assets/js/26.b099c374.js"><link rel="prefetch" href="/docsz/assets/js/27.09642db6.js"><link rel="prefetch" href="/docsz/assets/js/28.02e2e6ae.js"><link rel="prefetch" href="/docsz/assets/js/29.afc3b1a3.js"><link rel="prefetch" href="/docsz/assets/js/30.11f39e4a.js"><link rel="prefetch" href="/docsz/assets/js/31.28cda555.js"><link rel="prefetch" href="/docsz/assets/js/32.e61db7cf.js"><link rel="prefetch" href="/docsz/assets/js/33.8e5af6b8.js"><link rel="prefetch" href="/docsz/assets/js/34.739d64b3.js"><link rel="prefetch" href="/docsz/assets/js/35.8160085f.js"><link rel="prefetch" href="/docsz/assets/js/36.7c9c358c.js"><link rel="prefetch" href="/docsz/assets/js/37.eb53b003.js"><link rel="prefetch" href="/docsz/assets/js/38.fb045eba.js"><link rel="prefetch" href="/docsz/assets/js/39.e6d94ddf.js"><link rel="prefetch" href="/docsz/assets/js/4.b08e0ae1.js"><link rel="prefetch" href="/docsz/assets/js/40.ff3250b1.js"><link rel="prefetch" href="/docsz/assets/js/41.9b762866.js"><link rel="prefetch" href="/docsz/assets/js/42.cc21058e.js"><link rel="prefetch" href="/docsz/assets/js/43.f3f8f9d7.js"><link rel="prefetch" href="/docsz/assets/js/44.69420f77.js"><link rel="prefetch" href="/docsz/assets/js/45.68432cb2.js"><link rel="prefetch" href="/docsz/assets/js/46.57b1a9aa.js"><link rel="prefetch" href="/docsz/assets/js/47.90c488b4.js"><link rel="prefetch" href="/docsz/assets/js/48.86e3b04e.js"><link rel="prefetch" href="/docsz/assets/js/49.e125e40a.js"><link rel="prefetch" href="/docsz/assets/js/5.e43cd8d6.js"><link rel="prefetch" href="/docsz/assets/js/50.afc78d7a.js"><link rel="prefetch" href="/docsz/assets/js/51.a2e4d5a5.js"><link rel="prefetch" href="/docsz/assets/js/52.6b9e8808.js"><link rel="prefetch" href="/docsz/assets/js/53.32df1ffa.js"><link rel="prefetch" href="/docsz/assets/js/54.95097e27.js"><link rel="prefetch" href="/docsz/assets/js/55.1f6e4fcd.js"><link rel="prefetch" href="/docsz/assets/js/56.07b8c84a.js"><link rel="prefetch" href="/docsz/assets/js/57.b112991e.js"><link rel="prefetch" href="/docsz/assets/js/58.ac91d836.js"><link rel="prefetch" href="/docsz/assets/js/59.f30c9924.js"><link rel="prefetch" href="/docsz/assets/js/6.801f6138.js"><link rel="prefetch" href="/docsz/assets/js/7.40a4ddc5.js"><link rel="prefetch" href="/docsz/assets/js/8.a88053a9.js"><link rel="prefetch" href="/docsz/assets/js/9.58bb1686.js">
+    <link rel="stylesheet" href="/docsz/assets/css/0.styles.b8a772e3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>QianXiao</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>一枚小菜鸡的学习日记</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>qianxiao</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docsz/" class="home-link router-link-active"><img src="/docsz/assets/img/mydaughter.jpg" alt="QianXiao" class="logo"> <span class="site-name">QianXiao</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docsz/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      基础学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docsz/categories/code/" class="nav-link"><i class="undefined"></i>
+  code
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/css/" class="nav-link"><i class="undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/html/" class="nav-link"><i class="undefined"></i>
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/help/" class="nav-link"><i class="undefined"></i>
+  help
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/discuss/" class="nav-link"><i class="undefined"></i>
+  discuss
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vscode/" class="nav-link"><i class="undefined"></i>
+  vscode
+</a></li></ul></div></div><div class="nav-item"><a href="/docsz/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/docsz/help/aboutMy.html" class="nav-link"><i class="undefined"></i>
+  个人信息
+</a></div><div class="nav-item"><a href="/docsz/code/property.html" class="nav-link"><i class="iconfont reco-github"></i>
+  实例代码
+</a></div><div class="nav-item"><a href="/docsz/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/docsz/help/h1.html" class="nav-link"><i class="iconfont reco-faq"></i>
+  帮助
+</a></div><div class="nav-item"><a href="/docsz/help/question.html" class="nav-link"><i class="iconfont reco-message"></i>
+  意见收集
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><!----> <h3 class="name" data-v-39576ba9>
+    qianxiao
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>46</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>25</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/docsz/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      基础学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docsz/categories/code/" class="nav-link"><i class="undefined"></i>
+  code
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/css/" class="nav-link"><i class="undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/html/" class="nav-link"><i class="undefined"></i>
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/help/" class="nav-link"><i class="undefined"></i>
+  help
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/discuss/" class="nav-link"><i class="undefined"></i>
+  discuss
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vscode/" class="nav-link"><i class="undefined"></i>
+  vscode
+</a></li></ul></div></div><div class="nav-item"><a href="/docsz/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/docsz/help/aboutMy.html" class="nav-link"><i class="undefined"></i>
+  个人信息
+</a></div><div class="nav-item"><a href="/docsz/code/property.html" class="nav-link"><i class="iconfont reco-github"></i>
+  实例代码
+</a></div><div class="nav-item"><a href="/docsz/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/docsz/help/h1.html" class="nav-link"><i class="iconfont reco-faq"></i>
+  帮助
+</a></div><div class="nav-item"><a href="/docsz/help/question.html" class="nav-link"><i class="iconfont reco-message"></i>
+  意见收集
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>vue基础-生命周期</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>qianxiao</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">vue基础-生命周期</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>qianxiao</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>4/10/2022</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>vue</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="生命周期"><a href="#生命周期" class="header-anchor">#</a> 生命周期</h2> <p><strong>什么是生命周期？</strong><br>
+       以我们自己举例，受精卵形成的那一刻是我们生命的开始，身体最后一个器官停止运动后是我们生命的结束，这就可以视为一个生命周期。<br>
+       在vue中，我们new一个Vue的实例时就代表vue的生命开始了，我们关闭页面时就代表vue的生命结束了。<br>
+       当然在vue项目中，我们使用的往往不是直白的vue实例对象，我们使用的是一个组件，那么组件的生命在它被调用时开始，在切换为下一个组件时终止。<br>
+       当然在生命周期中，我们很多时候往往在意的不是新生和终结这两个时间节点，我们在意的是，它一生干了什么？在vue项目中我们关注的有8个时刻，被称为生命周期钩子，代表着整个周期内的关键节点的所作所为。</p> <h3 id="_8大生命周期钩子-vue2"><a href="#_8大生命周期钩子-vue2" class="header-anchor">#</a> 8大生命周期钩子（vue2）</h3> <blockquote><ol><li>beforeCreate:Vue实例创建前<br>
+       这时Vue实例还没创建呢！自然无法通过VM访问到data中数据、methods中方法</li> <li>created:Vue实例创建后<br>
+       这时Vue实例已经创建，可以通过VM访问到data中数据、methods中方法</li> <li>beforeMount:dom挂载到页面前<br>
+       页面呈现的是未经Vue编译的DOM结构。而且此时所有对DOM的操作，最终都不奏效。</li> <li>mounted:dom挂载到页面后<br>
+       页面呈现的是已经经Vue编译的DOM结构。此时可以操作dom，如开启定时器、发送网络请求等</li> <li>beforeUpdate:页面更新前<br>
+       此时页面还未更新，因此页面上展示的内容还是未更改的数据。</li> <li>updated:页面更新后<br>
+       此时页面已经更新，因此页面上展示的内容还是更改的数据。</li> <li>beforeDestroy:销毁前<br>
+       这是所有的内容都是可用的，一般用于关闭定时器，解绑自定义事件等。一般不推荐此时操作元素，因为其就要被销毁了，还折腾它干嘛！</li> <li>destroyed:销毁后<br>
+       人都牺牲了，就别折腾它了！</li></ol></blockquote> <p><img src="/docsz/assets/img/lifeCycle2.6f2c97f0.png" alt="生命周期演示图"></p> <h3 id="两个新的生命周期钩子及vue3的变化"><a href="#两个新的生命周期钩子及vue3的变化" class="header-anchor">#</a> 两个新的生命周期钩子及vue3的变化</h3> <p>       为什么要引入这两个生命周期钩子？<br>
+       在我们引入<a href="/docsz/demo/assembly/tryRouter.html">route路由</a>时，页面通过路由跳转时，beforeDestroy有时会有点小问题。因为当设置了缓存路由组件时，跳转界面，更换显示内容，原内容仍然被保存着并没有被销毁，所以原先写在beforeDestroy的内容并不会被执行，因此需要用到新的生命周期钩子。</p> <blockquote><ol><li>activated:路由组件激活时<br>
+       通过路由跳转进入该路由界面时，此时原本写在mounted的打开定时器等操作就可以写在activated中实现。</li> <li>deactivated:路由组件失活时<br>
+       通过路由跳转离开该路由界面时，此时原本写在beforeDestroy的内容都可以写在activated中实现。</li> <li>beforeDestroy:销毁前  ===&gt; beforeUnmount:卸载前</li> <li>destroyed:销毁后  ===&gt; unmounted:卸载后</li></ol></blockquote> <p><img src="/docsz/assets/img/lifecycle3.d2f8a1b7.svg" alt="生命周期演示图vue3"></p> <p>       因为在vue3中引入了组合式Api的概念，因此生命周期钩子也可以写在setup函数内部。不过需要更名：</p> <ul><li>beforeCreate    ====&gt;   setup()</li> <li>created         ====&gt;   setup()</li> <li>beforeMount     ====&gt;   onBeforeMount()</li> <li>mounted         ====&gt;   onMounted()</li> <li>beforeUpdate    ====&gt;   onBeforeUpdate()</li> <li>updated         ====&gt;   onUpdated()</li> <li>beforeUnmount   ====&gt;   onBeforeUnmount()</li> <li>unmounted       ====&gt;   onUnmounted()</li></ul></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">2022年5月8日星期日上午9点26分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/docsz/demo/basis/otherInstructions.html" class="prev">
+            vue基础-vue其他指令
+          </a></span> <span class="next"><a href="/docsz/demo/assembly/assembly.html">
+            vue组件化
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/docsz/demo/basis/lifeCycle.html#生命周期" class="sidebar-link reco-side-生命周期" data-v-cb1513f6>生命周期</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/basis/lifeCycle.html#_8大生命周期钩子-vue2" class="sidebar-link reco-side-_8大生命周期钩子-vue2" data-v-cb1513f6>8大生命周期钩子（vue2）</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/basis/lifeCycle.html#两个新的生命周期钩子及vue3的变化" class="sidebar-link reco-side-两个新的生命周期钩子及vue3的变化" data-v-cb1513f6>两个新的生命周期钩子及vue3的变化</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><!----><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/docsz/assets/mp4/xueyue.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:10px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="/docsz/assets/img/xueyue.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(/docsz/assets/img/xueyue.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>雪月</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>王玲琳</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到浅笑的个人博客
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="200" height="282" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-cursor"></canvas></div></div>
+    <script src="/docsz/assets/js/app.22c8ad57.js" defer></script><script src="/docsz/assets/js/3.837f952b.js" defer></script><script src="/docsz/assets/js/1.3b490a96.js" defer></script><script src="/docsz/assets/js/18.4f4f943d.js" defer></script>
+  </body>
+</html>

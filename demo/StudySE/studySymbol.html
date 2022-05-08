@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Symbol的内置值 | QianXiao</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/docsz/assets/img/logo.ico">
+    <meta name="description" content="简介ES6的Symbol的内置值">
+    
+    <link rel="preload" href="/docsz/assets/css/0.styles.b8a772e3.css" as="style"><link rel="preload" href="/docsz/assets/js/app.22c8ad57.js" as="script"><link rel="preload" href="/docsz/assets/js/3.837f952b.js" as="script"><link rel="preload" href="/docsz/assets/js/1.3b490a96.js" as="script"><link rel="preload" href="/docsz/assets/js/32.e61db7cf.js" as="script"><link rel="prefetch" href="/docsz/assets/js/10.9778ad93.js"><link rel="prefetch" href="/docsz/assets/js/11.0a0ed3b5.js"><link rel="prefetch" href="/docsz/assets/js/12.5cf01cbe.js"><link rel="prefetch" href="/docsz/assets/js/13.5e135359.js"><link rel="prefetch" href="/docsz/assets/js/14.5f00995e.js"><link rel="prefetch" href="/docsz/assets/js/15.1e067037.js"><link rel="prefetch" href="/docsz/assets/js/16.3e498ed7.js"><link rel="prefetch" href="/docsz/assets/js/17.a3c13a2f.js"><link rel="prefetch" href="/docsz/assets/js/18.4f4f943d.js"><link rel="prefetch" href="/docsz/assets/js/19.f12447de.js"><link rel="prefetch" href="/docsz/assets/js/20.7f1fb3a7.js"><link rel="prefetch" href="/docsz/assets/js/21.718d4e9c.js"><link rel="prefetch" href="/docsz/assets/js/22.ce9172d8.js"><link rel="prefetch" href="/docsz/assets/js/23.dc70db5d.js"><link rel="prefetch" href="/docsz/assets/js/24.272a291a.js"><link rel="prefetch" href="/docsz/assets/js/25.0d01fa50.js"><link rel="prefetch" href="/docsz/assets/js/26.b099c374.js"><link rel="prefetch" href="/docsz/assets/js/27.09642db6.js"><link rel="prefetch" href="/docsz/assets/js/28.02e2e6ae.js"><link rel="prefetch" href="/docsz/assets/js/29.afc3b1a3.js"><link rel="prefetch" href="/docsz/assets/js/30.11f39e4a.js"><link rel="prefetch" href="/docsz/assets/js/31.28cda555.js"><link rel="prefetch" href="/docsz/assets/js/33.8e5af6b8.js"><link rel="prefetch" href="/docsz/assets/js/34.739d64b3.js"><link rel="prefetch" href="/docsz/assets/js/35.8160085f.js"><link rel="prefetch" href="/docsz/assets/js/36.7c9c358c.js"><link rel="prefetch" href="/docsz/assets/js/37.eb53b003.js"><link rel="prefetch" href="/docsz/assets/js/38.fb045eba.js"><link rel="prefetch" href="/docsz/assets/js/39.e6d94ddf.js"><link rel="prefetch" href="/docsz/assets/js/4.b08e0ae1.js"><link rel="prefetch" href="/docsz/assets/js/40.ff3250b1.js"><link rel="prefetch" href="/docsz/assets/js/41.9b762866.js"><link rel="prefetch" href="/docsz/assets/js/42.cc21058e.js"><link rel="prefetch" href="/docsz/assets/js/43.f3f8f9d7.js"><link rel="prefetch" href="/docsz/assets/js/44.69420f77.js"><link rel="prefetch" href="/docsz/assets/js/45.68432cb2.js"><link rel="prefetch" href="/docsz/assets/js/46.57b1a9aa.js"><link rel="prefetch" href="/docsz/assets/js/47.90c488b4.js"><link rel="prefetch" href="/docsz/assets/js/48.86e3b04e.js"><link rel="prefetch" href="/docsz/assets/js/49.e125e40a.js"><link rel="prefetch" href="/docsz/assets/js/5.e43cd8d6.js"><link rel="prefetch" href="/docsz/assets/js/50.afc78d7a.js"><link rel="prefetch" href="/docsz/assets/js/51.a2e4d5a5.js"><link rel="prefetch" href="/docsz/assets/js/52.6b9e8808.js"><link rel="prefetch" href="/docsz/assets/js/53.32df1ffa.js"><link rel="prefetch" href="/docsz/assets/js/54.95097e27.js"><link rel="prefetch" href="/docsz/assets/js/55.1f6e4fcd.js"><link rel="prefetch" href="/docsz/assets/js/56.07b8c84a.js"><link rel="prefetch" href="/docsz/assets/js/57.b112991e.js"><link rel="prefetch" href="/docsz/assets/js/58.ac91d836.js"><link rel="prefetch" href="/docsz/assets/js/59.f30c9924.js"><link rel="prefetch" href="/docsz/assets/js/6.801f6138.js"><link rel="prefetch" href="/docsz/assets/js/7.40a4ddc5.js"><link rel="prefetch" href="/docsz/assets/js/8.a88053a9.js"><link rel="prefetch" href="/docsz/assets/js/9.58bb1686.js">
+    <link rel="stylesheet" href="/docsz/assets/css/0.styles.b8a772e3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>QianXiao</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>一枚小菜鸡的学习日记</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>qianxiao</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docsz/" class="home-link router-link-active"><img src="/docsz/assets/img/mydaughter.jpg" alt="QianXiao" class="logo"> <span class="site-name">QianXiao</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docsz/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      基础学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docsz/categories/code/" class="nav-link"><i class="undefined"></i>
+  code
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/css/" class="nav-link"><i class="undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/html/" class="nav-link"><i class="undefined"></i>
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/help/" class="nav-link"><i class="undefined"></i>
+  help
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/discuss/" class="nav-link"><i class="undefined"></i>
+  discuss
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vscode/" class="nav-link"><i class="undefined"></i>
+  vscode
+</a></li></ul></div></div><div class="nav-item"><a href="/docsz/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/docsz/help/aboutMy.html" class="nav-link"><i class="undefined"></i>
+  个人信息
+</a></div><div class="nav-item"><a href="/docsz/code/property.html" class="nav-link"><i class="iconfont reco-github"></i>
+  实例代码
+</a></div><div class="nav-item"><a href="/docsz/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/docsz/help/h1.html" class="nav-link"><i class="iconfont reco-faq"></i>
+  帮助
+</a></div><div class="nav-item"><a href="/docsz/help/question.html" class="nav-link"><i class="iconfont reco-message"></i>
+  意见收集
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><!----> <h3 class="name" data-v-39576ba9>
+    qianxiao
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>46</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>25</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/docsz/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      基础学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docsz/categories/code/" class="nav-link"><i class="undefined"></i>
+  code
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/css/" class="nav-link"><i class="undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/html/" class="nav-link"><i class="undefined"></i>
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/help/" class="nav-link"><i class="undefined"></i>
+  help
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/discuss/" class="nav-link"><i class="undefined"></i>
+  discuss
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vscode/" class="nav-link"><i class="undefined"></i>
+  vscode
+</a></li></ul></div></div><div class="nav-item"><a href="/docsz/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/docsz/help/aboutMy.html" class="nav-link"><i class="undefined"></i>
+  个人信息
+</a></div><div class="nav-item"><a href="/docsz/code/property.html" class="nav-link"><i class="iconfont reco-github"></i>
+  实例代码
+</a></div><div class="nav-item"><a href="/docsz/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/docsz/help/h1.html" class="nav-link"><i class="iconfont reco-faq"></i>
+  帮助
+</a></div><div class="nav-item"><a href="/docsz/help/question.html" class="nav-link"><i class="iconfont reco-message"></i>
+  意见收集
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Symbol的内置值</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>qianxiao</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">Symbol的内置值</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>qianxiao</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>4/28/2022</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>JavaScript</span><span class="tag-item" data-v-f875f3fc>ES</span><span class="tag-item" data-v-f875f3fc>symbol</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="symbol的内置值"><a href="#symbol的内置值" class="header-anchor">#</a> Symbol的内置值</h2> <p>       我看的教程里貌似不止11个，大家有兴趣的话，可以自己研究一下：<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol/asyncIterator" target="_blank" rel="noopener noreferrer">Symbol<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <h3 id="symbol-hasinstance"><a href="#symbol-hasinstance" class="header-anchor">#</a> Symbol.hasInstance</h3> <p>       当其他对象使用<code>instanceof</code>运算符，判断是否为该对象的实例时，会调用这个方法。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  class Person <span class="token punctuation">{</span>
+    static<span class="token punctuation">[</span>Symbol.hasInstance<span class="token punctuation">]</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console.log<span class="token punctuation">(</span>params<span class="token punctuation">)</span>   // 参数
+      console.log<span class="token punctuation">(</span><span class="token string">&quot;有人用我来检测类型了&quot;</span><span class="token punctuation">)</span>
+      <span class="token builtin class-name">return</span> <span class="token boolean">true</span>    // 可以自己控制 instanceof 检测的结果
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  console.log<span class="token punctuation">(</span>p1 instanceof Person<span class="token punctuation">)</span><span class="token punctuation">;</span> //true
+  console.log<span class="token punctuation">(</span>Person<span class="token punctuation">[</span>Symbol.hasInstance<span class="token punctuation">]</span><span class="token punctuation">(</span>p1<span class="token punctuation">))</span><span class="token punctuation">;</span> //true,instanceof和<span class="token punctuation">[</span>Symbol.hasInstance<span class="token punctuation">]</span>是等价的
+</code></pre></div><h3 id="symbol-isconcatspreadable"><a href="#symbol-isconcatspreadable" class="header-anchor">#</a> Symbol.isConcatSpreadable</h3> <p>       对象的<code>Symbol.isConcatSpreadable</code>属性等于的是一个布尔值，表示该对象用于<code>Array.prototype.concat()</code>时，是否可以展开。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  <span class="token builtin class-name">let</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span>, <span class="token number">2</span><span class="token punctuation">]</span>
+  <span class="token builtin class-name">let</span> arr2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span>, <span class="token number">4</span><span class="token punctuation">]</span>
+  arr2<span class="token punctuation">[</span>Symbol.isConcatSpreadable<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">false</span>   // 控制arr2是否可以展开
+  console.log<span class="token punctuation">(</span>arr.concat<span class="token punctuation">(</span>arr2<span class="token punctuation">))</span> //<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span>, <span class="token number">2</span>, Array<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+</code></pre></div><h3 id="symbol-species"><a href="#symbol-species" class="header-anchor">#</a> Symbol.species</h3> <p>       创建衍生对象时，会使用该属性。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  class Array1 extends Array <span class="token punctuation">{</span>
+    static get <span class="token punctuation">[</span>Symbol.species<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+      <span class="token builtin class-name">return</span> Array<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  const a <span class="token operator">=</span> new Array1<span class="token punctuation">(</span><span class="token number">1</span>, <span class="token number">2</span>, <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  const mapped <span class="token operator">=</span> a.map<span class="token punctuation">(</span>x <span class="token operator">=</span><span class="token operator">&gt;</span> x * x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  // a算做是Array身上派生出来的。
+  console.log<span class="token punctuation">(</span>mapped instanceof Array1<span class="token punctuation">)</span><span class="token punctuation">;</span>  // <span class="token boolean">false</span>
+  console.log<span class="token punctuation">(</span>mapped instanceof Array<span class="token punctuation">)</span><span class="token punctuation">;</span>   // <span class="token boolean">true</span>
+</code></pre></div><h3 id="symbol-match"><a href="#symbol-match" class="header-anchor">#</a> Symbol.match</h3> <p>       指定了匹配的是正则表达式而不是字符串。<code>String.prototype.match()</code>方法会调用此函数。<br>
+       如果你将<code>Symbol.match</code>置为 false，使用<code>match</code>属性的表达式检查会认为该项不是正则表达式对象。<code>startsWith</code>和<code>endsWith</code>方法将不会抛出<code>TypeError</code>。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  const regexp1 <span class="token operator">=</span> /foo/<span class="token punctuation">;</span>
+  regexp1<span class="token punctuation">[</span>Symbol.match<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+  console.log<span class="token punctuation">(</span><span class="token string">'/foo/'</span>.startsWith<span class="token punctuation">(</span>regexp1<span class="token punctuation">))</span><span class="token punctuation">;</span>   // <span class="token boolean">true</span>
+  console.log<span class="token punctuation">(</span><span class="token string">'/baz/'</span>.endsWith<span class="token punctuation">(</span>regexp1<span class="token punctuation">))</span><span class="token punctuation">;</span>     // <span class="token boolean">false</span>
+</code></pre></div><ul><li>startsWith: startsWith()方法用来判断当前字符串是否是以另外一个给定的子字符串“开头”的，根据判断结果返回 true 或 false。</li> <li>endswith: endswith() 方法用于判断字符串是否以指定后缀结尾，如果以指定后缀结尾返回True，否则返回False。</li></ul> <h3 id="symbol-replace"><a href="#symbol-replace" class="header-anchor">#</a> Symbol.replace</h3> <p>       这个属性指定了当一个字符串替换所匹配字符串时所调用的方法。<code>String.prototype.replace()</code>方法会调用此方法。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  class Replace1 <span class="token punctuation">{</span>
+    constructor<span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      this.value <span class="token operator">=</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">[</span>Symbol.replace<span class="token punctuation">]</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token builtin class-name">return</span> <span class="token variable"><span class="token variable">`</span>s/$<span class="token punctuation">{</span>string<span class="token punctuation">}</span>/$<span class="token punctuation">{</span>this.value<span class="token punctuation">}</span>/g<span class="token variable">`</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  console.log<span class="token punctuation">(</span><span class="token string">'foo'</span>.replace<span class="token punctuation">(</span>new Replace1<span class="token punctuation">(</span><span class="token string">'bar'</span><span class="token punctuation">))</span><span class="token punctuation">)</span><span class="token punctuation">;</span> // <span class="token string">&quot;s/foo/bar/g&quot;</span>
+</code></pre></div><h3 id="symbol-search"><a href="#symbol-search" class="header-anchor">#</a> Symbol.search</h3> <p><code>Symbol.search</code> 指定了一个搜索方法，这个方法接受用户输入的正则表达式，返回该正则表达式在字符串中匹配到的下标，这个方法由以下的方法来调用:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  class caseIn <span class="token punctuation">{</span>
+    constructor<span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      this.value <span class="token operator">=</span> value.toLowerCase<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">[</span>Symbol.search<span class="token punctuation">]</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token builtin class-name">return</span> string.toLowerCase<span class="token punctuation">(</span><span class="token punctuation">)</span>.indexOf<span class="token punctuation">(</span>this.value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  console.log<span class="token punctuation">(</span><span class="token string">'foobar'</span>.search<span class="token punctuation">(</span>new caseIn<span class="token punctuation">(</span><span class="token string">'BaR'</span><span class="token punctuation">))</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  // <span class="token number">3</span>
+</code></pre></div><h3 id="symbol-split"><a href="#symbol-split" class="header-anchor">#</a> Symbol.split</h3> <p><code>Symbol.split</code> 指向 一个正则表达式的索引处分割字符串的方法:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  class Split1 <span class="token punctuation">{</span>
+    constructor<span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      this.value <span class="token operator">=</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">[</span>Symbol.split<span class="token punctuation">]</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      const index <span class="token operator">=</span> string.indexOf<span class="token punctuation">(</span>this.value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token builtin class-name">return</span> <span class="token variable"><span class="token variable">`</span>$<span class="token punctuation">{</span>this.value<span class="token punctuation">}</span>$<span class="token punctuation">{</span>string.substr<span class="token punctuation">(</span><span class="token number">0</span>, index<span class="token punctuation">)</span><span class="token punctuation">}</span>/$<span class="token punctuation">{</span>string.substr<span class="token punctuation">(</span>index + this.value.length<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token variable">`</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  console.log<span class="token punctuation">(</span><span class="token string">'foobar'</span>.split<span class="token punctuation">(</span>new Split1<span class="token punctuation">(</span><span class="token string">'foo'</span><span class="token punctuation">))</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   // <span class="token string">&quot;foo/bar&quot;</span>
+</code></pre></div><h3 id="symbol-iterator"><a href="#symbol-iterator" class="header-anchor">#</a> Symbol.iterator</h3> <p>       ES6 创造了一种新的遍历命令<code>for...of</code>循环，Iterator接口主要供<code>for...of</code>使用。对象进行<code>for…of</code>循环时，会调用<code>Symbol.iterator</code>方法，返回该对象的默认遍历器。<br>
+       原生具备iterator接口的数据(可用<code>for...of</code>遍历)，有以下几种。<code>Array</code>、<code>Arguments</code>、<code>Set</code>、<code>Map</code>、<code>String</code>、<code>TypedArray</code>、<code>NodeList</code>。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  <span class="token builtin class-name">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name:<span class="token string">'zs'</span>,
+    age: <span class="token number">18</span>,
+    <span class="token punctuation">[</span>Symbol.iterator<span class="token punctuation">]</span>: Array.prototype<span class="token punctuation">[</span>Symbol.iterator<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  for<span class="token punctuation">(</span>let item of obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console.log<span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p><span style="color:red;">       因为我们使用的是数组原型上的<code>Symbol.iterator</code>，所以对象必须是个伪数组才能遍历，要解决这个问题我们可以自定义一个迭代器。</span></p> <h3 id="symbol-toprimitive"><a href="#symbol-toprimitive" class="header-anchor">#</a> Symbol.toPrimitive</h3> <p>       该对象被转为原始类型的值时，会调用这个方法，返回该对象对应的原始类型值，该方法在转基本类型时调用优先级最高。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  <span class="token builtin class-name">let</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function-name function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token builtin class-name">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>,
+    <span class="token function-name function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token builtin class-name">return</span> <span class="token string">'1'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>,
+    <span class="token punctuation">[</span>Symbol.toPrimitive<span class="token punctuation">]</span><span class="token punctuation">(</span>hint<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      switch <span class="token punctuation">(</span>hint<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token string">'number'</span><span class="token builtin class-name">:</span> //此时需要转换成数值 例如:数学运算
+          <span class="token builtin class-name">return</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">'string'</span><span class="token builtin class-name">:</span> // 此时需要转换成字符串 例如:字符串拼接
+          <span class="token builtin class-name">return</span> <span class="token string">'3'</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">'default'</span><span class="token builtin class-name">:</span> //此时可以转换成数值或字符串 例如：<span class="token operator">==</span>比较
+          <span class="token builtin class-name">return</span> <span class="token number">4</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  console.log<span class="token punctuation">(</span><span class="token number">1</span> + a<span class="token punctuation">)</span>   // <span class="token number">4</span>
+  console.log<span class="token punctuation">(</span><span class="token string">'1'</span> + a<span class="token punctuation">)</span>  // <span class="token string">'13'</span>
+</code></pre></div><h3 id="symbol-tostringtag"><a href="#symbol-tostringtag" class="header-anchor">#</a> Symbol.toStringTag</h3> <p>       在该对象上面调用<code>toString</code>方法时，返回该方法的返回值。在该对象上面调用Object.prototype.toString方法时，如果这个属性存在，它的返回值会出现在toString方法返回的字符串之中，表示对象的类型。也就是说，这个属性可以用来定制[object Object]或[object Array]中object后面的那个字符串。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  console.log<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">[</span>Symbol.toStringTag<span class="token punctuation">]</span>: <span class="token string">'Foo'</span><span class="token punctuation">}</span>.toString<span class="token punctuation">(</span><span class="token punctuation">))</span> // <span class="token string">&quot;[object Foo]&quot;</span>
+
+  class Collection <span class="token punctuation">{</span>
+    get <span class="token punctuation">[</span>Symbol.toStringTag<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token builtin class-name">return</span> <span class="token string">'xxx'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token builtin class-name">let</span> x <span class="token operator">=</span> new Collection<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console.log<span class="token punctuation">(</span>Object.prototype.toString.call<span class="token punctuation">(</span>x<span class="token punctuation">))</span> // <span class="token string">&quot;[object xxx]&quot;</span>
+</code></pre></div><h3 id="symbol-unscopables"><a href="#symbol-unscopables" class="header-anchor">#</a> Symbol.unscopables</h3> <p>       该对象指定了使用<code>with</code>关键字时，哪些属性会被 with环境排除。<br>
+       with关键字的: with语句的作用是将代码的作用域设置到一个特定的作用域中，基本语法:<code>with(){}</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code>eg:
+  const object1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    property1: <span class="token number">42</span>,
+    <span class="token punctuation">[</span>Symbol.unscopables<span class="token punctuation">]</span>: <span class="token punctuation">{</span>
+      property1: <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  with <span class="token punctuation">(</span>object1<span class="token punctuation">)</span> <span class="token punctuation">{</span>  // with后接的内容都在object1作用域内
+    console.log<span class="token punctuation">(</span>property1<span class="token punctuation">)</span><span class="token punctuation">;</span> // expected output: Error: property1 is not defined
+  <span class="token punctuation">}</span>
+</code></pre></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">2022年5月8日星期日上午9点26分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/docsz/demo/StudySE/ES6.html" class="prev">
+            ES6新特性(上)
+          </a></span> <span class="next"><a href="/docsz/demo/StudySE/ES6.html">
+            ES6新特性(上)
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol的内置值" class="sidebar-link reco-side-symbol的内置值" data-v-cb1513f6>Symbol的内置值</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-hasinstance" class="sidebar-link reco-side-symbol-hasinstance" data-v-cb1513f6>Symbol.hasInstance</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-isconcatspreadable" class="sidebar-link reco-side-symbol-isconcatspreadable" data-v-cb1513f6>Symbol.isConcatSpreadable</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-species" class="sidebar-link reco-side-symbol-species" data-v-cb1513f6>Symbol.species</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-match" class="sidebar-link reco-side-symbol-match" data-v-cb1513f6>Symbol.match</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-replace" class="sidebar-link reco-side-symbol-replace" data-v-cb1513f6>Symbol.replace</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-search" class="sidebar-link reco-side-symbol-search" data-v-cb1513f6>Symbol.search</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-split" class="sidebar-link reco-side-symbol-split" data-v-cb1513f6>Symbol.split</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-iterator" class="sidebar-link reco-side-symbol-iterator" data-v-cb1513f6>Symbol.iterator</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-toprimitive" class="sidebar-link reco-side-symbol-toprimitive" data-v-cb1513f6>Symbol.toPrimitive</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-tostringtag" class="sidebar-link reco-side-symbol-tostringtag" data-v-cb1513f6>Symbol.toStringTag</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/studySymbol.html#symbol-unscopables" class="sidebar-link reco-side-symbol-unscopables" data-v-cb1513f6>Symbol.unscopables</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><!----><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/docsz/assets/mp4/xueyue.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:10px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="/docsz/assets/img/xueyue.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(/docsz/assets/img/xueyue.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>雪月</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>王玲琳</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到浅笑的个人博客
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="200" height="282" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-cursor"></canvas></div></div>
+    <script src="/docsz/assets/js/app.22c8ad57.js" defer></script><script src="/docsz/assets/js/3.837f952b.js" defer></script><script src="/docsz/assets/js/1.3b490a96.js" defer></script><script src="/docsz/assets/js/32.e61db7cf.js" defer></script>
+  </body>
+</html>

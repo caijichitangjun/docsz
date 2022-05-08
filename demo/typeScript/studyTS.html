@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TypeScript-类型重塑 | QianXiao</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/docsz/assets/img/logo.ico">
+    <meta name="description" content="简介TypeScript的特点、安装以及编译">
+    
+    <link rel="preload" href="/docsz/assets/css/0.styles.b8a772e3.css" as="style"><link rel="preload" href="/docsz/assets/js/app.22c8ad57.js" as="script"><link rel="preload" href="/docsz/assets/js/3.837f952b.js" as="script"><link rel="preload" href="/docsz/assets/js/1.3b490a96.js" as="script"><link rel="preload" href="/docsz/assets/js/51.a2e4d5a5.js" as="script"><link rel="prefetch" href="/docsz/assets/js/10.9778ad93.js"><link rel="prefetch" href="/docsz/assets/js/11.0a0ed3b5.js"><link rel="prefetch" href="/docsz/assets/js/12.5cf01cbe.js"><link rel="prefetch" href="/docsz/assets/js/13.5e135359.js"><link rel="prefetch" href="/docsz/assets/js/14.5f00995e.js"><link rel="prefetch" href="/docsz/assets/js/15.1e067037.js"><link rel="prefetch" href="/docsz/assets/js/16.3e498ed7.js"><link rel="prefetch" href="/docsz/assets/js/17.a3c13a2f.js"><link rel="prefetch" href="/docsz/assets/js/18.4f4f943d.js"><link rel="prefetch" href="/docsz/assets/js/19.f12447de.js"><link rel="prefetch" href="/docsz/assets/js/20.7f1fb3a7.js"><link rel="prefetch" href="/docsz/assets/js/21.718d4e9c.js"><link rel="prefetch" href="/docsz/assets/js/22.ce9172d8.js"><link rel="prefetch" href="/docsz/assets/js/23.dc70db5d.js"><link rel="prefetch" href="/docsz/assets/js/24.272a291a.js"><link rel="prefetch" href="/docsz/assets/js/25.0d01fa50.js"><link rel="prefetch" href="/docsz/assets/js/26.b099c374.js"><link rel="prefetch" href="/docsz/assets/js/27.09642db6.js"><link rel="prefetch" href="/docsz/assets/js/28.02e2e6ae.js"><link rel="prefetch" href="/docsz/assets/js/29.afc3b1a3.js"><link rel="prefetch" href="/docsz/assets/js/30.11f39e4a.js"><link rel="prefetch" href="/docsz/assets/js/31.28cda555.js"><link rel="prefetch" href="/docsz/assets/js/32.e61db7cf.js"><link rel="prefetch" href="/docsz/assets/js/33.8e5af6b8.js"><link rel="prefetch" href="/docsz/assets/js/34.739d64b3.js"><link rel="prefetch" href="/docsz/assets/js/35.8160085f.js"><link rel="prefetch" href="/docsz/assets/js/36.7c9c358c.js"><link rel="prefetch" href="/docsz/assets/js/37.eb53b003.js"><link rel="prefetch" href="/docsz/assets/js/38.fb045eba.js"><link rel="prefetch" href="/docsz/assets/js/39.e6d94ddf.js"><link rel="prefetch" href="/docsz/assets/js/4.b08e0ae1.js"><link rel="prefetch" href="/docsz/assets/js/40.ff3250b1.js"><link rel="prefetch" href="/docsz/assets/js/41.9b762866.js"><link rel="prefetch" href="/docsz/assets/js/42.cc21058e.js"><link rel="prefetch" href="/docsz/assets/js/43.f3f8f9d7.js"><link rel="prefetch" href="/docsz/assets/js/44.69420f77.js"><link rel="prefetch" href="/docsz/assets/js/45.68432cb2.js"><link rel="prefetch" href="/docsz/assets/js/46.57b1a9aa.js"><link rel="prefetch" href="/docsz/assets/js/47.90c488b4.js"><link rel="prefetch" href="/docsz/assets/js/48.86e3b04e.js"><link rel="prefetch" href="/docsz/assets/js/49.e125e40a.js"><link rel="prefetch" href="/docsz/assets/js/5.e43cd8d6.js"><link rel="prefetch" href="/docsz/assets/js/50.afc78d7a.js"><link rel="prefetch" href="/docsz/assets/js/52.6b9e8808.js"><link rel="prefetch" href="/docsz/assets/js/53.32df1ffa.js"><link rel="prefetch" href="/docsz/assets/js/54.95097e27.js"><link rel="prefetch" href="/docsz/assets/js/55.1f6e4fcd.js"><link rel="prefetch" href="/docsz/assets/js/56.07b8c84a.js"><link rel="prefetch" href="/docsz/assets/js/57.b112991e.js"><link rel="prefetch" href="/docsz/assets/js/58.ac91d836.js"><link rel="prefetch" href="/docsz/assets/js/59.f30c9924.js"><link rel="prefetch" href="/docsz/assets/js/6.801f6138.js"><link rel="prefetch" href="/docsz/assets/js/7.40a4ddc5.js"><link rel="prefetch" href="/docsz/assets/js/8.a88053a9.js"><link rel="prefetch" href="/docsz/assets/js/9.58bb1686.js">
+    <link rel="stylesheet" href="/docsz/assets/css/0.styles.b8a772e3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>QianXiao</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>一枚小菜鸡的学习日记</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>qianxiao</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docsz/" class="home-link router-link-active"><img src="/docsz/assets/img/mydaughter.jpg" alt="QianXiao" class="logo"> <span class="site-name">QianXiao</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docsz/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      基础学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docsz/categories/code/" class="nav-link"><i class="undefined"></i>
+  code
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/css/" class="nav-link"><i class="undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/html/" class="nav-link"><i class="undefined"></i>
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/help/" class="nav-link"><i class="undefined"></i>
+  help
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/discuss/" class="nav-link"><i class="undefined"></i>
+  discuss
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vscode/" class="nav-link"><i class="undefined"></i>
+  vscode
+</a></li></ul></div></div><div class="nav-item"><a href="/docsz/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/docsz/help/aboutMy.html" class="nav-link"><i class="undefined"></i>
+  个人信息
+</a></div><div class="nav-item"><a href="/docsz/code/property.html" class="nav-link"><i class="iconfont reco-github"></i>
+  实例代码
+</a></div><div class="nav-item"><a href="/docsz/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/docsz/help/h1.html" class="nav-link"><i class="iconfont reco-faq"></i>
+  帮助
+</a></div><div class="nav-item"><a href="/docsz/help/question.html" class="nav-link"><i class="iconfont reco-message"></i>
+  意见收集
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><!----> <h3 class="name" data-v-39576ba9>
+    qianxiao
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>46</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>25</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/docsz/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      基础学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docsz/categories/code/" class="nav-link"><i class="undefined"></i>
+  code
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/css/" class="nav-link"><i class="undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/html/" class="nav-link"><i class="undefined"></i>
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/help/" class="nav-link"><i class="undefined"></i>
+  help
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/discuss/" class="nav-link"><i class="undefined"></i>
+  discuss
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vscode/" class="nav-link"><i class="undefined"></i>
+  vscode
+</a></li></ul></div></div><div class="nav-item"><a href="/docsz/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/docsz/help/aboutMy.html" class="nav-link"><i class="undefined"></i>
+  个人信息
+</a></div><div class="nav-item"><a href="/docsz/code/property.html" class="nav-link"><i class="iconfont reco-github"></i>
+  实例代码
+</a></div><div class="nav-item"><a href="/docsz/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/docsz/help/h1.html" class="nav-link"><i class="iconfont reco-faq"></i>
+  帮助
+</a></div><div class="nav-item"><a href="/docsz/help/question.html" class="nav-link"><i class="iconfont reco-message"></i>
+  意见收集
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>TypeScript-类型重塑</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>qianxiao</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">TypeScript-类型重塑</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>qianxiao</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>4/27/2022</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>JavaScript</span><span class="tag-item" data-v-f875f3fc>TypeScript</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="typescript简介"><a href="#typescript简介" class="header-anchor">#</a> TypeScript简介</h2> <p>       TypeScript(以下简称TS)是JavaScript(以下简称js)的超集，进化版，在js的基础上对其功能进行扩展，经转化后再交由js执行。<br>
+       因为ts是js的超集，因此任意的js代码都可以被当做ts代码执行，又由于ts需要编译器转化为js，在转化时可以任意指定js的版本，因此可以完美的解决js的兼容问题。<br>
+       相较之下，</p> <ul><li>TS拥有了静态类型，更加严格的语法，更强大的功能</li> <li>TS在代码执行前完成代码的检查，减小运行时异常出现几率</li> <li>TS代码可以编译为任意版本的JS代码，有效解决不同JS运行环境兼容问题</li> <li>相同功能，TS的代码量要大于JS，但TS的代码结构更加清晰，变量类型更加明确，在后期代码的维护中TS却远远胜于JS。</li></ul> <h3 id="使用准备"><a href="#使用准备" class="header-anchor">#</a> 使用准备</h3> <p>       以下操作在cmd命令行或vscode终端或其他使用命令行的地方操作。</p> <ol><li>下载并安装<code>node.js</code>，可参考<a href="/docsz/demo/download/vueDownload.html">node.js安装</a></li> <li>全局安装ts， <code>npm i -g typescript</code></li></ol> <h3 id="基础简介"><a href="#基础简介" class="header-anchor">#</a> 基础简介</h3> <h4 id="类型声明"><a href="#类型声明" class="header-anchor">#</a> 类型声明</h4> <p>       类型声明是ts的一个非常重要的特点，它使原本随意定义的变量变得规范起来，ts变量在声明时可以指定变量类型，在对其赋值或更改时，或对其值进行判断，符合则赋值，否则则报错。简单来说，就是为变量规定了类型，使它只能存储这一类型的值。</p> <div class="language-typeScript extra-class"><pre class="language-typescript"><code>eg<span class="token operator">:</span>
+  <span class="token keyword">let</span> name<span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> age<span class="token operator">:</span><span class="token builtin">number</span> <span class="token operator">=</span> <span class="token number">18</span>
+  <span class="token keyword">let</span> age<span class="token operator">:</span><span class="token builtin">number</span> <span class="token operator">=</span> <span class="token string">'18'</span>   <span class="token comment">// 会报错</span>
+</code></pre></div><p>       有人可能会觉得对每一个变量声明类型很麻烦，但这正是为了维护时的便利，在设计时自然也考虑到了频繁声明的小'问题'。<br>
+       类型声明是ts的实际上在很多时候ts都是可以自动进行类型判断的，具体规则是: 如果你的定义与赋值同时进行，如上代码第二句，则此时可以忽略变量类型声明。<br>
+       下面介绍一下在ts中有哪些类型可供定义。</p> <table><thead><tr><th>类型</th> <th>eg</th> <th>code eg</th> <th>描述</th></tr></thead> <tbody><tr><td>number</td> <td><code>1, 1.0, 1n</code></td> <td><code>let age:number = 10</code></td> <td>任意进制、任意数字</td></tr> <tr><td>string</td> <td><code>'name', &quot;type&quot;, `other`</code></td> <td><code>let name:string = 'zs'</code></td> <td>单引号、双引号、ES6模版字符串</td></tr> <tr><td>boolean</td> <td><code>true, false</code></td> <td><code>let isShow:boolean = false</code></td> <td>布尔值true、false</td></tr> <tr><td>any</td> <td><code>*</code></td> <td><code>let age:any = 10; age = '100'</code></td> <td>可以是任意类型</td></tr> <tr><td>unknown</td> <td><code>*</code></td> <td><code>let age:unknown = 10; age = '100'</code></td> <td>任意安全的any类型</td></tr> <tr><td>void</td> <td><code>空/undefined</code></td> <td><code>let age:void = undefined</code></td> <td>空值或undefined</td></tr> <tr><td>never</td> <td>没有值</td> <td><code>function error: never { throw '出错了' }</code></td> <td>不能是任何值</td></tr> <tr><td>object</td> <td><code>{}</code></td> <td><code>let age:object = {}</code></td> <td>任意的 JS 对象</td></tr> <tr><td>array</td> <td><code>[1, 2]</code></td> <td><code>let age:Array&lt;number&gt; = [1, 2]</code></td> <td>任意 JS 数组</td></tr> <tr><td>tuple</td> <td><code>[1, 2]</code></td> <td><code>let age:[string, number] = ['123', 123]</code></td> <td>ts新类型，定长数组</td></tr> <tr><td>enum</td> <td><code>enum{1, 2}</code></td> <td>如下代码所示</td> <td>TS中新增类型，枚举</td></tr> <tr><td>可选类型</td> <td><code>1 | '1'</code></td> <td><code>let age:number | string = 10; age = '10'</code></td> <td>在标识的类型中选择一种满足即可</td></tr></tbody></table> <div class="language-typeScript extra-class"><pre class="language-typescript"><code>eg<span class="token operator">:</span>
+  <span class="token keyword">enum</span> Color <span class="token punctuation">{</span>   <span class="token comment">// 枚举数据类型，默认从0开始，常用于控制流程。</span>
+    Red<span class="token punctuation">,</span>     <span class="token comment">// 如此时Color.Red = 0，当然你也可以自行对枚举中的内容进行赋值，如 Red = 2, Green = 5, ...</span>
+    Green<span class="token punctuation">,</span>   <span class="token comment">// 默认时Color.Green = 1，依此类推</span>
+    Blue<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h4 id="断言"><a href="#断言" class="header-anchor">#</a> 断言</h4> <p>       在ts中，断言就是告诉编译器我觉得这个变量是什么类型。<br>
+       在某些情况下，我们可能会拿到一个不知类型的变量，如<code>let someValue: unknown = &quot;this is a string&quot;;</code>，我们当然很清楚这是一个字符串，但编译器不知道啊！因此我们可以通过断言来告诉编译器，断言有两种写法，如下:</p> <div class="language-typeScript extra-class"><pre class="language-typescript"><code>eg<span class="token operator">:</span>
+  <span class="token keyword">let</span> someValue<span class="token operator">:</span> <span class="token builtin">unknown</span> <span class="token operator">=</span> <span class="token string">&quot;this is a string&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> strLength<span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">=</span> <span class="token punctuation">(</span>someValue <span class="token keyword">as</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token comment">// let strLength: number = (&lt;string&gt;someValue).length;</span>
+</code></pre></div><h3 id="编译"><a href="#编译" class="header-anchor">#</a> 编译</h3> <p>       如果我们要编译的ts文件并不多，我们可以使用<code>tsc xxx.ts -w</code>来编译某个文件，并监视其，当其变化时重新编译。<br>
+       当需要编译的内容较多时，就需要<code>tsc</code>一键编译了，在一键编译前，还需要我们配置一个文件<code>tsconfig.json</code>，在cmd命令行或vscode终端运行<code>tsc --init</code>即可生成该文件，配置信息大致如下，或详见<a href="/docsz/demo/typeScript/compilerOptions.html">tsconfig.json</a>：</p> <table><thead><tr><th>配置项</th> <th>子配置</th> <th>code eg</th> <th>描述</th></tr></thead> <tbody><tr><td>include</td> <td></td> <td><code>&quot;include&quot;:[&quot;src/*&quot;, &quot;tests/*&quot;]</code></td> <td>需要编译文件所在的目录</td></tr> <tr><td>exclude</td> <td></td> <td><code>&quot;exclude&quot;: [&quot;./src/user/**&quot;]</code></td> <td>定义排除在外的目录</td></tr> <tr><td>extends</td> <td></td> <td><code>&quot;extends&quot;: &quot;./configs/base&quot;</code></td> <td>获取base的配置信息</td></tr> <tr><td>files</td> <td></td> <td><code>&quot;files&quot;:[&quot;test.ts&quot;, &quot;test1.ts&quot;]</code></td> <td>效果类似于include，但只有在文件较少时使用</td></tr> <tr><td>compilerOptions</td> <td></td> <td></td> <td>compilerOptions是<code>tsconfig.json</code>较为重要和复杂的配置项，有众多的子配置</td></tr> <tr><td></td> <td>target</td> <td><code>&quot;target&quot;: &quot;ES6&quot;</code></td> <td>编译后对应的目标版本，如ES5、ES6...</td></tr> <tr><td></td> <td>lib</td> <td><code>&quot;lib&quot;: [&quot;ES6&quot;, &quot;DOM&quot;]</code></td> <td>指定代码运行时所包含的库</td></tr> <tr><td></td> <td>module</td> <td><code>&quot;module&quot;: &quot;CommonJS&quot;</code></td> <td>编译后代码使用的模块化系统</td></tr> <tr><td></td> <td>outDir</td> <td><code>&quot;outDir&quot;: &quot;dist&quot;</code></td> <td>编译后文件的位置</td></tr> <tr><td></td> <td>outFile</td> <td><code>&quot;outFile&quot;: &quot;dist/app.js&quot;</code></td> <td>将所有的文件编译为一个js文件，并存放在指定位置</td></tr> <tr><td></td> <td>rootDir</td> <td><code>&quot;rootDir&quot;: &quot;./src&quot;</code></td> <td>指定代码的根目录，默认情况下是最长公共目录</td></tr> <tr><td></td> <td>allowJs</td> <td><code>&quot;allowJs&quot;: true</code></td> <td>是否对js文件编译</td></tr> <tr><td></td> <td>checkJs</td> <td><code>&quot;checkJs&quot;: true</code></td> <td>是否对js文件进行检查</td></tr> <tr><td></td> <td>removeComments</td> <td><code>&quot;removeComments&quot;: true</code></td> <td>是否删除注释</td></tr> <tr><td></td> <td>noEmit</td> <td><code>&quot;noEmit&quot;: false</code></td> <td>不对代码进行编译</td></tr> <tr><td></td> <td>sourceMap</td> <td><code>&quot;sourceMap&quot;: false</code></td> <td>是否生成编译前后代码映射</td></tr> <tr><td></td> <td>严格检查</td> <td><code>&quot;strict&quot;: true</code>，详见<a href="/docsz/demo/typeScript/compilerOptions.html">tsconfig.json</a></td> <td>开启严格检查</td></tr> <tr><td></td> <td>额外检查</td> <td></td> <td>编译后文件的位置</td></tr> <tr><td></td> <td>高级</td> <td></td> <td>编译后文件的位置</td></tr></tbody></table> <h3 id="配合webpack"><a href="#配合webpack" class="header-anchor">#</a> 配合webpack</h3> <p>       要使用webpack打包(如果想要了解webpack打包配置相关内容，请参考<a href="/docsz/demo/webpack/studyWebP.html">webpack</a>)文件需要下载相关工具，如下：</p> <ul><li><code>npm i -D webpack webpack-cli webpack-dev-server typescript ts-loader clean-webpack-plugin</code></li> <li>webpack: npm i webpack -g</li> <li>webpack-cli: npm i webpack-cli -g   （使我们能够使用命令的形式打包文件）</li> <li>webpack-dev-server: 指令为npx webpack-dev-server 。在内存中编译，不会产生输出，自动编译，自动打开浏览器、自动刷新</li> <li>typescript: ts 编译器</li> <li>ts-loader: ts 加载器，用于在webpack中编译ts文件</li> <li>html-webpack-plugin: webpack中html插件，用来打包创建html文件</li> <li>clean-webpack-plugin: webpack 中的清除插件，每次构建都会先清除目录</li></ul> <p>       对webpack配置文件作如下配置：</p> <div class="language-typeScript extra-class"><pre class="language-typescript"><code>  <span class="token keyword">let</span> path <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+  <span class="token keyword">let</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">&quot;html-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+  <span class="token keyword">let</span> <span class="token punctuation">{</span> CleanWebpackPlugin <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">&quot;clean-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    optimization<span class="token operator">:</span><span class="token punctuation">{</span> 
+      minimize<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">// 关闭代码压缩，可选 </span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    entry<span class="token operator">:</span> <span class="token string">&quot;./src/index.ts&quot;</span><span class="token punctuation">,</span>      <span class="token comment">// webpack打包入口文件</span>
+    devtool<span class="token operator">:</span> <span class="token string">&quot;inline-source-map&quot;</span><span class="token punctuation">,</span>
+    devServer<span class="token operator">:</span> <span class="token punctuation">{</span>                  <span class="token comment">// 开发服务器</span>
+      contentBase<span class="token operator">:</span> <span class="token string">'./dist'</span>       <span class="token comment">// 项目构建后的路径</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    output<span class="token operator">:</span> <span class="token punctuation">{</span>                     <span class="token comment">// 打包后输出文件配置</span>
+      path<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;dist&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+      filename<span class="token operator">:</span> <span class="token string">&quot;bundle.js&quot;</span><span class="token punctuation">,</span> 
+      environment<span class="token operator">:</span> <span class="token punctuation">{</span> 
+        arrowFunction<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">// 关闭 webpack 的箭头函数，可选 </span>
+      <span class="token punctuation">}</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    resolve<span class="token operator">:</span> <span class="token punctuation">{</span> 
+      extensions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.ts&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.js&quot;</span><span class="token punctuation">]</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    module<span class="token operator">:</span> <span class="token punctuation">{</span>        <span class="token comment">// webpack只能处理js文件，非js文件需要处理的话，要在此处配置</span>
+      rules<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> 
+        test<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">.ts$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> 
+        use<span class="token operator">:</span> <span class="token punctuation">{</span> 
+          loader<span class="token operator">:</span> <span class="token string">&quot;ts-loader&quot;</span> 
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+        exclude<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span> 
+      <span class="token punctuation">}</span><span class="token punctuation">]</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    plugins<span class="token operator">:</span> <span class="token punctuation">[</span>      <span class="token comment">// 插件的声明区，帮助webpack处理更困难的任务</span>
+      <span class="token keyword">new</span> <span class="token class-name">CleanWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+      <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span> 
+        title<span class="token operator">:</span><span class="token string">'TS 测试'</span> 
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>       对<code>tsconfig.json</code>配置文件作如下配置：</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code>  <span class="token punctuation">{</span> 
+    <span class="token operator">...</span>
+    <span class="token string-property property">&quot;compilerOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> 
+      <span class="token string-property property">&quot;target&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ES2015&quot;</span><span class="token punctuation">,</span> 
+      <span class="token string-property property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ES2015&quot;</span><span class="token punctuation">,</span> 
+      <span class="token string-property property">&quot;strict&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>       对<code>package.json</code>配置文件作如下配置：</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code>  <span class="token operator">...</span> 
+  <span class="token string-property property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>   <span class="token comment">// 配置相关命令</span>
+    <span class="token string-property property">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;echo Error: no test specified &amp;&amp; exit 1&quot;</span><span class="token punctuation">,</span> 
+    <span class="token string-property property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack&quot;</span><span class="token punctuation">,</span> 
+    <span class="token string-property property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack serve --open chrome.exe&quot;</span> 
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token operator">...</span>略<span class="token operator">...</span> 
+</code></pre></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">2022年5月8日星期日上午9点26分</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/docsz/demo/typeScript/studyTS2.html">
+            TypeScript-类与方法的延伸
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/docsz/demo/typeScript/studyTS.html#typescript简介" class="sidebar-link reco-side-typescript简介" data-v-cb1513f6>TypeScript简介</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/typeScript/studyTS.html#使用准备" class="sidebar-link reco-side-使用准备" data-v-cb1513f6>使用准备</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/typeScript/studyTS.html#基础简介" class="sidebar-link reco-side-基础简介" data-v-cb1513f6>基础简介</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/typeScript/studyTS.html#编译" class="sidebar-link reco-side-编译" data-v-cb1513f6>编译</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/typeScript/studyTS.html#配合webpack" class="sidebar-link reco-side-配合webpack" data-v-cb1513f6>配合webpack</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><!----><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/docsz/assets/mp4/xueyue.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:10px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="/docsz/assets/img/xueyue.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(/docsz/assets/img/xueyue.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>雪月</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>王玲琳</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到浅笑的个人博客
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="200" height="282" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-cursor"></canvas></div></div>
+    <script src="/docsz/assets/js/app.22c8ad57.js" defer></script><script src="/docsz/assets/js/3.837f952b.js" defer></script><script src="/docsz/assets/js/1.3b490a96.js" defer></script><script src="/docsz/assets/js/51.a2e4d5a5.js" defer></script>
+  </body>
+</html>

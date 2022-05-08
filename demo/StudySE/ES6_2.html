@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ES6新特性(下) | QianXiao</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/docsz/assets/img/logo.ico">
+    <meta name="description" content="简介ES6的新特性">
+    
+    <link rel="preload" href="/docsz/assets/css/0.styles.b8a772e3.css" as="style"><link rel="preload" href="/docsz/assets/js/app.22c8ad57.js" as="script"><link rel="preload" href="/docsz/assets/js/3.837f952b.js" as="script"><link rel="preload" href="/docsz/assets/js/1.3b490a96.js" as="script"><link rel="preload" href="/docsz/assets/js/30.11f39e4a.js" as="script"><link rel="prefetch" href="/docsz/assets/js/10.9778ad93.js"><link rel="prefetch" href="/docsz/assets/js/11.0a0ed3b5.js"><link rel="prefetch" href="/docsz/assets/js/12.5cf01cbe.js"><link rel="prefetch" href="/docsz/assets/js/13.5e135359.js"><link rel="prefetch" href="/docsz/assets/js/14.5f00995e.js"><link rel="prefetch" href="/docsz/assets/js/15.1e067037.js"><link rel="prefetch" href="/docsz/assets/js/16.3e498ed7.js"><link rel="prefetch" href="/docsz/assets/js/17.a3c13a2f.js"><link rel="prefetch" href="/docsz/assets/js/18.4f4f943d.js"><link rel="prefetch" href="/docsz/assets/js/19.f12447de.js"><link rel="prefetch" href="/docsz/assets/js/20.7f1fb3a7.js"><link rel="prefetch" href="/docsz/assets/js/21.718d4e9c.js"><link rel="prefetch" href="/docsz/assets/js/22.ce9172d8.js"><link rel="prefetch" href="/docsz/assets/js/23.dc70db5d.js"><link rel="prefetch" href="/docsz/assets/js/24.272a291a.js"><link rel="prefetch" href="/docsz/assets/js/25.0d01fa50.js"><link rel="prefetch" href="/docsz/assets/js/26.b099c374.js"><link rel="prefetch" href="/docsz/assets/js/27.09642db6.js"><link rel="prefetch" href="/docsz/assets/js/28.02e2e6ae.js"><link rel="prefetch" href="/docsz/assets/js/29.afc3b1a3.js"><link rel="prefetch" href="/docsz/assets/js/31.28cda555.js"><link rel="prefetch" href="/docsz/assets/js/32.e61db7cf.js"><link rel="prefetch" href="/docsz/assets/js/33.8e5af6b8.js"><link rel="prefetch" href="/docsz/assets/js/34.739d64b3.js"><link rel="prefetch" href="/docsz/assets/js/35.8160085f.js"><link rel="prefetch" href="/docsz/assets/js/36.7c9c358c.js"><link rel="prefetch" href="/docsz/assets/js/37.eb53b003.js"><link rel="prefetch" href="/docsz/assets/js/38.fb045eba.js"><link rel="prefetch" href="/docsz/assets/js/39.e6d94ddf.js"><link rel="prefetch" href="/docsz/assets/js/4.b08e0ae1.js"><link rel="prefetch" href="/docsz/assets/js/40.ff3250b1.js"><link rel="prefetch" href="/docsz/assets/js/41.9b762866.js"><link rel="prefetch" href="/docsz/assets/js/42.cc21058e.js"><link rel="prefetch" href="/docsz/assets/js/43.f3f8f9d7.js"><link rel="prefetch" href="/docsz/assets/js/44.69420f77.js"><link rel="prefetch" href="/docsz/assets/js/45.68432cb2.js"><link rel="prefetch" href="/docsz/assets/js/46.57b1a9aa.js"><link rel="prefetch" href="/docsz/assets/js/47.90c488b4.js"><link rel="prefetch" href="/docsz/assets/js/48.86e3b04e.js"><link rel="prefetch" href="/docsz/assets/js/49.e125e40a.js"><link rel="prefetch" href="/docsz/assets/js/5.e43cd8d6.js"><link rel="prefetch" href="/docsz/assets/js/50.afc78d7a.js"><link rel="prefetch" href="/docsz/assets/js/51.a2e4d5a5.js"><link rel="prefetch" href="/docsz/assets/js/52.6b9e8808.js"><link rel="prefetch" href="/docsz/assets/js/53.32df1ffa.js"><link rel="prefetch" href="/docsz/assets/js/54.95097e27.js"><link rel="prefetch" href="/docsz/assets/js/55.1f6e4fcd.js"><link rel="prefetch" href="/docsz/assets/js/56.07b8c84a.js"><link rel="prefetch" href="/docsz/assets/js/57.b112991e.js"><link rel="prefetch" href="/docsz/assets/js/58.ac91d836.js"><link rel="prefetch" href="/docsz/assets/js/59.f30c9924.js"><link rel="prefetch" href="/docsz/assets/js/6.801f6138.js"><link rel="prefetch" href="/docsz/assets/js/7.40a4ddc5.js"><link rel="prefetch" href="/docsz/assets/js/8.a88053a9.js"><link rel="prefetch" href="/docsz/assets/js/9.58bb1686.js">
+    <link rel="stylesheet" href="/docsz/assets/css/0.styles.b8a772e3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>QianXiao</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>一枚小菜鸡的学习日记</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>qianxiao</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docsz/" class="home-link router-link-active"><img src="/docsz/assets/img/mydaughter.jpg" alt="QianXiao" class="logo"> <span class="site-name">QianXiao</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docsz/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      基础学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docsz/categories/code/" class="nav-link"><i class="undefined"></i>
+  code
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/css/" class="nav-link"><i class="undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/html/" class="nav-link"><i class="undefined"></i>
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/help/" class="nav-link"><i class="undefined"></i>
+  help
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/discuss/" class="nav-link"><i class="undefined"></i>
+  discuss
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vscode/" class="nav-link"><i class="undefined"></i>
+  vscode
+</a></li></ul></div></div><div class="nav-item"><a href="/docsz/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/docsz/help/aboutMy.html" class="nav-link"><i class="undefined"></i>
+  个人信息
+</a></div><div class="nav-item"><a href="/docsz/code/property.html" class="nav-link"><i class="iconfont reco-github"></i>
+  实例代码
+</a></div><div class="nav-item"><a href="/docsz/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/docsz/help/h1.html" class="nav-link"><i class="iconfont reco-faq"></i>
+  帮助
+</a></div><div class="nav-item"><a href="/docsz/help/question.html" class="nav-link"><i class="iconfont reco-message"></i>
+  意见收集
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><!----> <h3 class="name" data-v-39576ba9>
+    qianxiao
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>46</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>25</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/docsz/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      基础学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docsz/categories/code/" class="nav-link"><i class="undefined"></i>
+  code
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/css/" class="nav-link"><i class="undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/html/" class="nav-link"><i class="undefined"></i>
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/webpack/" class="nav-link"><i class="undefined"></i>
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/help/" class="nav-link"><i class="undefined"></i>
+  help
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/discuss/" class="nav-link"><i class="undefined"></i>
+  discuss
+</a></li><li class="dropdown-item"><!----> <a href="/docsz/categories/vscode/" class="nav-link"><i class="undefined"></i>
+  vscode
+</a></li></ul></div></div><div class="nav-item"><a href="/docsz/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/docsz/help/aboutMy.html" class="nav-link"><i class="undefined"></i>
+  个人信息
+</a></div><div class="nav-item"><a href="/docsz/code/property.html" class="nav-link"><i class="iconfont reco-github"></i>
+  实例代码
+</a></div><div class="nav-item"><a href="/docsz/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/docsz/help/h1.html" class="nav-link"><i class="iconfont reco-faq"></i>
+  帮助
+</a></div><div class="nav-item"><a href="/docsz/help/question.html" class="nav-link"><i class="iconfont reco-message"></i>
+  意见收集
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>ES6新特性(下)</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>qianxiao</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">ES6新特性(下)</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>qianxiao</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>4/28/2022</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>JavaScript</span><span class="tag-item" data-v-f875f3fc>ES</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="迭代器和生成器"><a href="#迭代器和生成器" class="header-anchor">#</a> 迭代器和生成器</h3> <h4 id="迭代器iterator"><a href="#迭代器iterator" class="header-anchor">#</a> 迭代器iterator</h4> <p>       在Symbol中我们介绍symbol的内置值时，其实简单介绍过迭代器(iterator)。<br>
+       ES6 创造了一种新的遍历命令<code>for...of</code>循环，Iterator接口主要供<code>for...of</code>使用。对象进行<code>for…of</code>循环时，会调用<code>Symbol.iterator</code>方法，返回该对象的默认遍历器。<br>
+       在<code>for...of</code>每次循环时，保存的键值，而<code>for...in</code>则保存着下标值。<br>
+       原生具备iterator接口的数据(可用<code>for...of</code>遍历)，有以下几种。<code>Array</code>、<code>Arguments</code>、<code>Set</code>、<code>Map</code>、<code>String</code>、<code>TypedArray</code>、<code>NodeList</code>。<br>
+       原理如下：<br>
+              1. 创建一个指针对象，使其指向当前数据结构的起点<br>
+              2. 第一次调用对象的next方法，此时指针会指向数据结构的第一个成员<br>
+              3. 不断的调用next方法，指针不断后移，直到指向最后一个成员<br>
+              4. 每次调用next方法都会包含一个value和done属性的对象</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token literal-property property">eg</span><span class="token operator">:</span>
+  <span class="token keyword">let</span> student <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'zs'</span><span class="token punctuation">,</span> <span class="token string">'ls'</span><span class="token punctuation">,</span> <span class="token string">'ww'</span><span class="token punctuation">,</span> <span class="token string">'zl'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> iterator <span class="token operator">=</span> student<span class="token punctuation">[</span>Symbol<span class="token punctuation">.</span>iterator<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>iterator<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// {value:'zs', done:false}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>iterator<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// {value:'ls', done:false}</span>
+  <span class="token operator">...</span> 
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>iterator<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// {value:undefined, done:true}</span>
+
+<span class="token literal-property property">eg</span><span class="token operator">:</span> 自定义迭代器
+  <span class="token keyword">let</span> student <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'zs'</span><span class="token punctuation">,</span> <span class="token string">'ls'</span><span class="token punctuation">,</span> <span class="token string">'ww'</span><span class="token punctuation">,</span> <span class="token string">'zl'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span>Symbol<span class="token punctuation">.</span>iterator<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 下标</span>
+      <span class="token keyword">let</span> _this <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span> <span class="token comment">// 保存this</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">if</span><span class="token punctuation">(</span>index <span class="token operator">&lt;</span> _this<span class="token punctuation">.</span>name<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            index<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token literal-property property">value</span><span class="token operator">:</span> _this<span class="token punctuation">.</span>name<span class="token punctuation">[</span>index<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token literal-property property">done</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> <span class="token literal-property property">done</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h4 id="生成器"><a href="#生成器" class="header-anchor">#</a> 生成器</h4> <p>       生成器是一种特殊的函数，用于解决异步编程的问题。其在一定程度上可以看做一种特殊的生成器。</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code>声明一个生成器函数：
+  <span class="token keyword">function</span> <span class="token operator">*</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 在生成器函数中可以书写yield关键字</span>
+    <span class="token comment">// yield相当于代码的分隔符</span>
+    <span class="token keyword">yield</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'123'</span><span class="token punctuation">)</span>
+    <span class="token keyword">yield</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'456'</span><span class="token punctuation">)</span>
+    <span class="token keyword">yield</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'789'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">let</span> iterator <span class="token operator">=</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  iterator<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">...</span> 
+  <span class="token comment">// 生成函数必须调用next才会被执行</span>
+  <span class="token comment">// 当执行遇到yield时停止执行，下次调用next时，会从上次停止执行的yield为起点，执行到下一个yield或函数体执行完毕。</span>
+
+<span class="token literal-property property">生成器函数参数传递</span><span class="token operator">:</span>
+  <span class="token keyword">let</span> iterator <span class="token operator">=</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'AAA'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 调用时可以传递参数。</span>
+  iterator<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token string">'BBB'</span><span class="token punctuation">)</span>  
+    <span class="token comment">// next方法也可以传递参数</span>
+    <span class="token comment">// 该参数会作为yield console.log('123')的返回值</span>
+    <span class="token comment">// 即 let bbb = yield console.log('123') ===&gt; bbb = 'BBB'</span>
+</code></pre></div><h3 id="promise"><a href="#promise" class="header-anchor">#</a> promise</h3> <p>       promise是ES6引入的用于解决异步问题的另一种方案。（非常重要）<br>
+       这里讲的可能不是很清楚，我正在寻找哪位大佬讲的比较清楚的promise的视频，所以这里暂时没有推荐，还请见谅！</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token literal-property property">eg</span><span class="token operator">:</span>
+  <span class="token keyword">const</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> info <span class="token operator">=</span> <span class="token string">'消息'</span>
+    <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'成功'</span> <span class="token operator">+</span> info<span class="token punctuation">)</span>   <span class="token comment">// 成功的信号，当成功时，调用then方法的第一个方法</span>
+    <span class="token comment">// reject('失败' + info)    // 失败的信号，当失败时，调用then方法的第二个方法</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token constant">P</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>  <span class="token comment">// 成功消息</span>
+    <span class="token comment">// then方法返回值也是一个promise对象，状态由返回结果决定，因此可以层层嵌套</span>
+
+    <span class="token comment">// 1. 非promise对象, 状态为成功，返回值是成功的值</span>
+    <span class="token comment">// return 123;   </span>
+
+    <span class="token comment">// 2. 是promise值, 状态由返回的Promise的状态决定，返回值是promise</span>
+    的返回值
+    <span class="token comment">// return new Promise((resolve, reject) =&gt; {  // 普通函数和箭头函数都可以</span>
+    <span class="token comment">//   resolve('成功');</span>
+    <span class="token comment">// })</span>
+
+    <span class="token comment">// 3. 抛出错误，状态为失败， 返回值为失败的值。</span>
+    <span class="token keyword">throw</span> <span class="token string">'出错了'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>  <span class="token comment">// 失败消息</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  p<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">reason</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reason<span class="token punctuation">)</span>  <span class="token comment">// 失败消息</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>       Promise有三种状态:<br>
+       （1）如果用Promise()构造器创建一个Promise对象，当被创建时，它的状态是pending，<br>
+       （2）如果一个Promise对象的resolve方法被调用，它的状态会变成fulfilled，<br>
+       （3）而如果一个Promise对象的reject方法被调用，它的状态会变成rejected。<br>
+       此外，还有两种初始化Promise对象的方法，分别是Promise.resolve方法和Promise.reject方法，前者会直接返回一个状态为fulfilled的Promise对象,而后者会直接返回一个状态为rejected的Promise对象。<br>
+       在一个Promise链中，如果一个Promise状态变成了fulfilled，它会自动在Promise链中向下寻找，直到发现一个then方法，并执行其中的第一个参数函数；而如果一个Promise的状态变成了rejected，它会在Promise链中向下寻找，直到发现一个带有两个参数的then方法并执行它的第二个参数函数或发现一个catch方法并执行它的参数函数。</p> <h3 id="set和map"><a href="#set和map" class="header-anchor">#</a> set和map</h3> <h4 id="set集合"><a href="#set集合" class="header-anchor">#</a> set集合</h4> <p>       ES6为我们定义了一种新的数据结构-set集合，实现了iterator，因此可以使用扩展运输符和<code>for...of</code>，set的每个元素都不相同，因此可以利用set去重。<br>
+       同时为其配备了相应的方法。<code>size</code>、<code>add</code>、<code>delete</code>、<code>clear</code>、<code>has</code>。</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token literal-property property">eg</span><span class="token operator">:</span>
+  <span class="token comment">// 初始时可以为空，亦可以传递参数</span>
+  <span class="token keyword">let</span> testSet <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token string">'3'</span><span class="token punctuation">,</span> <span class="token string">'3'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>   <span class="token comment">// {'1', '2', '3'}</span>
+
+  testSet<span class="token punctuation">.</span>size   <span class="token comment">// 集合中元素数目</span>
+  testSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'4'</span><span class="token punctuation">)</span>  <span class="token comment">// 添加元素</span>
+  testSet<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token string">'4'</span><span class="token punctuation">)</span>  <span class="token comment">// 删除元素</span>
+  testSet<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">// 清空集合</span>
+  testSet<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token string">'2'</span><span class="token punctuation">)</span>    <span class="token comment">// 检查集合中是否含有某个元素</span>
+</code></pre></div><h4 id="map集合"><a href="#map集合" class="header-anchor">#</a> map集合</h4> <p>       map在一定程度上类似于对象，但对象的键值仅能为字符串，map则打破了这个限制，实现了iterator，因此可以使用扩展运输符和<code>for...of</code>。<br>
+       同时为其配备了相应的方法。<code>size</code>、<code>set</code>、<code>get</code>、<code>clear</code>、<code>has</code>、<code>delete</code>。</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token literal-property property">eg</span><span class="token operator">:</span>
+  <span class="token comment">// 初始时可以为空，亦可以传递参数</span>
+  <span class="token keyword">let</span> testMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">// {'1', '2', '3'}</span>
+  <span class="token keyword">let</span> key <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">}</span>
+  <span class="token keyword">let</span> value <span class="token operator">=</span> <span class="token number">15</span>
+  testMap<span class="token punctuation">.</span>size   <span class="token comment">// 集合中元素数目</span>
+  testMap<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span>  <span class="token comment">// 添加元素</span>
+  testMap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>  <span class="token comment">// 获取元素key值</span>
+  testMap<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>  <span class="token comment">// 删除元素</span>
+  testMap<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">// 清空集合</span>
+  testMap<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>    <span class="token comment">// 检查集合中是否含有某个键值</span>
+</code></pre></div><h3 id="class类"><a href="#class类" class="header-anchor">#</a> class类</h3> <p>       ES6中关于类的升级其实只体现在原型对象的写法更清晰，其余ES5都可以做到。</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token literal-property property">eg</span><span class="token operator">:</span>
+  <span class="token keyword">class</span> <span class="token class-name">peoper</span><span class="token punctuation">{</span>
+    <span class="token keyword">static</span> age <span class="token operator">=</span> <span class="token number">18</span>  <span class="token comment">// static标注的变量属于类，但不属于实例</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">get</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token comment">// 相当于给外部提供一个可以访问内部private定义的参数</span>
+      <span class="token keyword">return</span> <span class="token string">'ls'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">set</span> <span class="token function">setName</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token comment">// 必须携带参数</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> value   <span class="token comment">// 修改内部属性</span>
+    <span class="token punctuation">}</span> 
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">class</span> <span class="token class-name">student</span> extend peoper<span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span>weight</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 调用父级构造函数为name赋值</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>weight <span class="token operator">=</span> weight<span class="token punctuation">;</span>  <span class="token comment">// 用自己的构造函数为weight赋值</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">let</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">peoper</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// p.age =&gt; undifined    peoper.age =&gt; 18</span>
+  p<span class="token punctuation">.</span>getName   <span class="token comment">// 就是函数的返回值</span>
+</code></pre></div><h3 id="扩展"><a href="#扩展" class="header-anchor">#</a> 扩展</h3> <h4 id="数值扩展"><a href="#数值扩展" class="header-anchor">#</a> 数值扩展</h4> <ol><li>Number.EPSILON:javascript表示的最小精度，用于数值比较</li> <li>进制：0b =&gt; 2  0o =&gt; 8  0x =&gt;16
+eg: 0b11 ==&gt; 3</li> <li>Number.isfinite：判断一个数是不是有限数</li> <li>Number.isNaN：判断一个数是否是NaN</li> <li>Number.parseInt / parseFloat  :字符串转整数或浮点数</li> <li>Number.isInteger：判断一个函数是否是整数</li> <li>Math.trunc：将小数部分抹掉（同样的还有floor等）</li> <li>Math.sign：判断一个数是正数、负数还是0</li></ol> <h4 id="对象方法扩展"><a href="#对象方法扩展" class="header-anchor">#</a> 对象方法扩展</h4> <ol><li>Object.is
+判断两个值是否相等，类似于===。Object.is(NaN,NaN)   =&gt;   true，NaN===NaN=&gt; false</li> <li>Object.assign
+对象的合并   Object.assign（A，B）</li> <li>Object.get/setPrototypeOf<br>
+获取或设置原型对象</li></ol> <h3 id="模块化"><a href="#模块化" class="header-anchor">#</a> 模块化</h3> <p>       模块化是指将一个大的文件风格很多个小的文件，然后将小文件组合起来。在减少命名冲突、实现代码复用、维护性上优势明显，注意区别组件化。<br>
+       小的文件希望被大文件引用，那么小文件的内容就必须对大文件开放，我们称这种状态为'暴露'，暴露文件内容有三种方式：<br>
+              1.分别暴露：在需要暴露的变量/函数前添加export暴露即可。<br>
+              eg：<code>export name = &quot;zs&quot;;export age = 18</code><br>
+              2.集中暴露：正常书写模块中的js代码，在js文件的末尾将需要暴露的内容全部暴露。<br>
+              eg：<code>let name = 'zs';let age = 18; export{name, age}</code><br>
+              3.默认暴露：<br>
+              eg：<code>export default { let name = 'zs'; ... }</code><br>
+       大文件希望获取到小文件的内容，我们称之为引入，引入文件内容有三种方式：</p> <div class="language-javaScript extra-class"><pre class="language-javascript"><code><span class="token literal-property property">eg</span><span class="token operator">:</span>
+  普通写法：
+    <span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> <span class="token constant">A</span> <span class="token keyword">from</span> <span class="token string">'./test'</span>
+    <span class="token constant">A</span><span class="token punctuation">.</span>name <span class="token operator">==</span><span class="token operator">&gt;</span> <span class="token string">'zs'</span>
+    <span class="token comment">// 如果使用的是默认暴露，则需要使用下面的形式才能访问到数据</span>
+    <span class="token comment">// A.default.name ==&gt; 'zs'   </span>
+  
+  解构赋值：
+    <span class="token keyword">import</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> age <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./test'</span>
+      name <span class="token operator">==</span><span class="token operator">&gt;</span> <span class="token string">'zs'</span>
+    <span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token keyword">as</span> <span class="token constant">A</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./test'</span>
+      <span class="token constant">A</span><span class="token punctuation">.</span>name <span class="token operator">==</span><span class="token operator">&gt;</span> <span class="token string">'zs'</span>
+
+  简便写法：（默认暴露）
+    <span class="token keyword">import</span> <span class="token constant">A</span> <span class="token keyword">from</span> <span class="token string">'./test'</span>
+    <span class="token constant">A</span><span class="token punctuation">.</span>name <span class="token operator">==</span><span class="token operator">&gt;</span> <span class="token string">'zs'</span>  <span class="token comment">// 不需要`.default`</span>
+</code></pre></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">2022年5月8日星期日上午9点26分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/docsz/demo/StudySE/ES6.html" class="prev">
+            ES6新特性(上)
+          </a></span> <span class="next"><a href="/docsz/demo/StudySE/ES7-11.html">
+            ES7-ES11新特性
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/ES6_2.html#迭代器和生成器" class="sidebar-link reco-side-迭代器和生成器" data-v-cb1513f6>迭代器和生成器</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/ES6_2.html#promise" class="sidebar-link reco-side-promise" data-v-cb1513f6>promise</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/ES6_2.html#set和map" class="sidebar-link reco-side-set和map" data-v-cb1513f6>set和map</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/ES6_2.html#class类" class="sidebar-link reco-side-class类" data-v-cb1513f6>class类</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/ES6_2.html#扩展" class="sidebar-link reco-side-扩展" data-v-cb1513f6>扩展</a></li><li class="level-3" data-v-cb1513f6><a href="/docsz/demo/StudySE/ES6_2.html#模块化" class="sidebar-link reco-side-模块化" data-v-cb1513f6>模块化</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><!----><!----><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/docsz/assets/mp4/xueyue.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:10px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="/docsz/assets/img/xueyue.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(/docsz/assets/img/xueyue.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>雪月</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>王玲琳</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到浅笑的个人博客
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="200" height="282" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-cursor"></canvas></div></div>
+    <script src="/docsz/assets/js/app.22c8ad57.js" defer></script><script src="/docsz/assets/js/3.837f952b.js" defer></script><script src="/docsz/assets/js/1.3b490a96.js" defer></script><script src="/docsz/assets/js/30.11f39e4a.js" defer></script>
+  </body>
+</html>
